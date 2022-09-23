@@ -27,7 +27,9 @@ const Sounds: NextPage = ({ arrayDataIframes }: any) => {
 
 export default Sounds;
 export async function getStaticProps() {
-    const dataBandcamp = await fetch("http://localhost:3000/api/bandcampData").then((e) => e.json());
+    const dataBandcamp = await fetch(`sa2-9ifwczj9r-piotrko64.vercel.app/api/bandcampData`).then((e) =>
+        e.json()
+    );
     console.log(dataBandcamp);
     return { props: { arrayDataIframes: iframesBandcampDataParser(dataBandcamp.iframes) } };
 }
