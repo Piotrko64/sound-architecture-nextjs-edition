@@ -17,29 +17,28 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     await page.goto(config.urlBandcamp);
     const allAlbums = await page.$$("#music-grid > li > a");
 
-    await allAlbums[1].click();
-    await page.waitForNavigation();
+    for (let i = 0; i <= allAlbums.length - 1; i++) {
+        const allAlbums = await page.$$("#music-grid > li > a");
+        await allAlbums[i].click();
+        await page.waitForNavigation();
 
-    const shareButton = await page.$(".share-embed");
-    await shareButton?.click();
+        const shareButton = await page.$(".share-embed");
+        await shareButton?.click();
 
-    const buttonEmbed = await page.$(".embed-other-services.panel-section > a");
-    await buttonEmbed?.click();
+        const buttonEmbed = await page.$(".embed-other-services.panel-section > a");
+        await buttonEmbed?.click();
 
-    const smallSizeElement = await page.$(".sizechoice.small > .sizepreview");
-    await smallSizeElement?.click();
+        const smallSizeElement = await page.$(".sizechoice.small > .sizepreview");
+        await smallSizeElement?.click();
 
-    const inputElement = await page.$("input.embed_text");
+        const inputElement = await page.$("input.embed_text");
 
-    const dataIframe = await page.evaluate((element) => element?.value, inputElement);
+        const dataIframe = await page.evaluate((element) => element?.value, inputElement);
 
-    await iframes.push(dataIframe);
+        await iframes.push(dataIframe);
 
-    await page.goto(config.urlBandcamp);
-
-    const allAlbumss = await page.$$("#music-grid > li > a");
-    await allAlbumss[2].click();
-    await page.waitForNavigation();
+        await page.goto(config.urlBandcamp);
+    }
 
     await browser.close();
     console.log(iframes);
