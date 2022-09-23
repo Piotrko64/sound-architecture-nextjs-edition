@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
 
-const Sounds: NextPage = ({ arrayDataIframes }: any) => {
+const Sounds: NextPage = () => {
     return (
         <div>
             <Head>
@@ -11,23 +11,8 @@ const Sounds: NextPage = ({ arrayDataIframes }: any) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             aaaaaaaaaaaa
-            {arrayDataIframes.map(({ srcIframe, hrefAnchor, title }: any) => (
-                <iframe
-                    key={srcIframe}
-                    style={{ border: "0", width: "100%", height: "42px" }}
-                    src={srcIframe}
-                >
-                    <a href={hrefAnchor}>{title}</a>
-                </iframe>
-            ))}
-            {JSON.stringify(arrayDataIframes)}
         </div>
     );
 };
 
 export default Sounds;
-export async function getStaticProps() {
-    const dataBandcamp = await fetch("http://localhost:3000/api/bandcampData").then((e) => e.json());
-    console.log(dataBandcamp);
-    return { props: { arrayDataIframes: iframesBandcampDataParser(dataBandcamp.iframes) } };
-}
