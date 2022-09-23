@@ -1,11 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
 
 const Home: NextPage = () => {
-    fetch("http://localhost:3000/api/BandcampData")
-        .then((e) => e.json())
-        .then((data) => console.log(data));
-
     return (
         <div>
             <Head>
