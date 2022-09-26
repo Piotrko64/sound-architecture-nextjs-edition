@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
+import { youtubeDataApi } from "../utils/SSG/youtube/youtubeDataApi";
 
 const Home: NextPage = () => {
+    youtubeDataApi();
     return (
         <div>
             <Head>
