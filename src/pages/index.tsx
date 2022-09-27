@@ -3,6 +3,7 @@ import Head from "next/head";
 import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
 import { getInstaImages } from "../utils/SSG/instagram/instagramDataApi";
 import { youtubeDataApi } from "../utils/SSG/youtube/youtubeDataApi";
+import axios from "axios";
 
 const Home: NextPage = ({ posts }: any) => {
     return (
@@ -19,11 +20,16 @@ const Home: NextPage = ({ posts }: any) => {
 
 export default Home;
 export async function getStaticProps() {
-    const urls = await getInstaImages();
+    const dataPosts = await axios({
+        url: "https://api.zenrows.com/v1/?apikey=f0d260bdf121721ace1991d288f25add9b0ccd29&url=https%3A%2F%2Fwww.instagram.com%2Fsoundarchitecture_sa%2F&js_render=true&premium_proxy=true&autoparse=true",
+        method: "GET",
+    })
+        .then((response: any) => response.data)
+        .catch((error: any) => console.log(error));
 
     return {
         props: {
-            posts: urls,
+            imagesUrl: dataPosts.user.edge_owner_to_timeline_media.edges.map((e: any) => e.node.display_url),
         },
     };
 }
