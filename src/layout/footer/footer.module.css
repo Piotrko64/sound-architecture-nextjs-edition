@@ -114,4 +114,15 @@
     .bcImg {
         width: 100px;
     }
+    .rightReserved {
+        font-size: 0.85em;
+        padding: 10px;
+    }
+    .logoWhite {
+        padding-bottom: 20px;
+    }
+    .logoFooter {
+        width: 40px;
+        height: 50px;
+    }
 }

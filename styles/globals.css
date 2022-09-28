@@ -16,7 +16,16 @@ a {
 * {
     box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #222222;
+}
 
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    transition: all 3s ease;
+    cursor: pointer;
+}
 :root {
     --backColor: #0f0f0f;
 }
