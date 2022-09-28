@@ -57,6 +57,9 @@
 .li:first-child {
     padding-left: 0;
 }
+.li:hover {
+    opacity: 0.8;
+}
 .flexOne {
     flex: 1;
 }
