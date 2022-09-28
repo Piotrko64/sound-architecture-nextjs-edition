@@ -4,6 +4,6 @@ export const puppeteerConfig = async () => ({
     args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
     defaultViewport: chromium.defaultViewport,
     executablePath: await chromium.executablePath,
-    headless: false,
+    headless: true,
     ignoreHTTPSErrors: true,
 });
