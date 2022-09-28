@@ -20,7 +20,7 @@ export function NextImage({
                     src={imgURL}
                     alt={title}
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                     sizes="50vw"
                     loading="eager"
                 />

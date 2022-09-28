@@ -10,3 +10,30 @@
     margin: 0;
     padding: 0;
 }
+.li {
+    padding: 15px;
+    cursor: pointer;
+}
+.li:first-child {
+    padding-left: 0;
+}
+.flexOne {
+    flex: 1;
+}
+.socials {
+    display: flex;
+    justify-content: flex-end;
+}
+.img {
+    position: relative;
+    height: 55px;
+    aspect-ratio: 1;
+}
+.imgSocial {
+    height: 40px;
+    aspect-ratio: 1;
+    margin: 20px;
+}
+.imgSocial:last-child {
+    margin-right: 0;
+}
