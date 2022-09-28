@@ -7,11 +7,13 @@ export function NextImage({
     additionalClass,
     click,
     title,
+    link,
 }: {
     imgURL: string;
     additionalClass: string;
     click?: () => void;
     title?: string;
+    link?: string;
 }) {
     return (
         <div onClick={click}>

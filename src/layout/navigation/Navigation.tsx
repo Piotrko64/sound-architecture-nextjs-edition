@@ -27,10 +27,25 @@ export function Navigation() {
                     <NextImage imgURL="/assets/socials/smallBC.webp" additionalClass={classes.imgSocial} />
                 </div>
             </ul>
-            <NextImage imgURL="/assets/whiteLogo.webp" additionalClass={cx(classes.img, classes.flexOne)} />
+            <Link href="/">
+                <a>
+                    <NextImage
+                        imgURL="/assets/whiteLogo.webp"
+                        additionalClass={cx(classes.img, classes.flexOne)}
+                    />
+                </a>
+            </Link>
             <div className={cx(classes.socials, classes.flexOne)}>
-                <NextImage imgURL="/assets/socials/smallYT.webp" additionalClass={classes.imgSocial} />
-                <NextImage imgURL="/assets/socials/smallBC.webp" additionalClass={classes.imgSocial} />
+                <a
+                    href="https://www.youtube.com/channel/UCseRS2xV0cIl4Mm44b4rqvw"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <NextImage imgURL="/assets/socials/smallYT.webp" additionalClass={classes.imgSocial} />
+                </a>
+                <a href="https://soundarchitecture.bandcamp.com" target="_blank" rel="noreferrer">
+                    <NextImage imgURL="/assets/socials/smallBC.webp" additionalClass={classes.imgSocial} />
+                </a>
             </div>
         </nav>
     );
