@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backColor);
+    height: 85px;
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
