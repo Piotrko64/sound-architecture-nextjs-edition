@@ -7,13 +7,14 @@ export function NextImage({
     additionalClass,
     click,
     title,
-    link,
+
+    coverMode,
 }: {
     imgURL: string;
     additionalClass: string;
     click?: () => void;
     title?: string;
-    link?: string;
+    coverMode?: boolean;
 }) {
     return (
         <div onClick={click} className={classes.flexOne}>
@@ -22,9 +23,8 @@ export function NextImage({
                     src={imgURL}
                     alt={title}
                     layout="fill"
-                    objectFit="contain"
-                    sizes="50vw"
-                    loading="eager"
+                    objectFit={coverMode ? "cover" : "contain"}
+                    sizes="100vw"
                 />
             </div>
         </div>

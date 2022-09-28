@@ -1,0 +1,45 @@
+.backgroundImage {
+    margin-top: 65px;
+    height: 260px;
+    width: 100vw;
+}
+.h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-family: "Abril Fatface", cursive;
+    font-weight: 400;
+    font-size: 2.6em;
+    text-shadow: 0 0 2px rgb(0 0 0 / 70%);
+    text-align: center;
+    width: 100vw;
+    padding: 0 15px;
+}
+.container {
+    position: relative;
+}
+@media (max-width: 920px) {
+    .backgroundImage {
+        height: 220px;
+    }
+    .h1 {
+        font-size: 2.4em;
+    }
+}
+@media (max-width: 570px) {
+    .backgroundImage {
+        height: 170px;
+    }
+    .h1 {
+        font-size: 2em;
+    }
+}
+@media (max-width: 440px) {
+    .backgroundImage {
+        height: 150px;
+    }
+    .h1 {
+        font-size: 1.8em;
+    }
+}

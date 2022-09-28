@@ -4,6 +4,11 @@
     align-items: center;
     background-color: var(--backColor);
     height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
 }
 .navBtn {
     display: none;
