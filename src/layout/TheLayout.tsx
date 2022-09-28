@@ -1,3 +1,4 @@
+import { Footer } from "./footer/Footer";
 import { Navigation } from "./navigation/Navigation";
 
 export function TheLayout({ children }: { children: JSX.Element }) {
@@ -5,6 +6,7 @@ export function TheLayout({ children }: { children: JSX.Element }) {
         <>
             <Navigation />
             {children}
+            <Footer />
         </>
     );
 }

@@ -1,4 +1,7 @@
 .relative {
     position: relative;
-    pointer-events: none;
+    margin: auto;
+}
+.flexOne {
+    flex: 1;
 }

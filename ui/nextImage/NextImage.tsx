@@ -16,7 +16,7 @@ export function NextImage({
     link?: string;
 }) {
     return (
-        <div onClick={click}>
+        <div onClick={click} className={classes.flexOne}>
             <div className={cx(additionalClass, classes.relative)}>
                 <Image
                     src={imgURL}

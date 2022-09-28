@@ -1,0 +1,117 @@
+.footer {
+    background-color: var(--backColor);
+}
+.mainInfo {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.licenseEmail {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+}
+.license,
+.email {
+    text-decoration: underline;
+}
+.license:hover {
+    text-decoration: none;
+}
+.email:hover {
+    text-decoration: none;
+}
+.socialImg {
+    position: relative;
+    flex: 1;
+    height: 100px;
+}
+.ytImg {
+    width: 220px;
+}
+.bcImg {
+    width: 320px;
+}
+.rightReserved {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 15px;
+}
+.logoWhite {
+    padding-bottom: 40px;
+}
+.logoFooter {
+    width: 60px;
+    height: 80px;
+}
+@media (max-width: 1320px) {
+    .licenseEmail {
+        font-size: 1.1em;
+    }
+
+    .socialImg {
+        height: 80px;
+    }
+    .ytImg {
+        width: 160px;
+    }
+    .bcImg {
+        width: 200px;
+    }
+}
+@media (max-width: 920px) {
+    .licenseEmail {
+        font-size: 1em;
+    }
+
+    .socialImg {
+        height: 60px;
+    }
+    .ytImg {
+        width: 120px;
+    }
+    .bcImg {
+        width: 160px;
+    }
+}
+@media (max-width: 570px) {
+    .licenseEmail {
+        font-size: 0.9em;
+    }
+
+    .socialImg {
+        height: 50px;
+    }
+    .ytImg {
+        width: 100px;
+    }
+    .bcImg {
+        width: 120px;
+    }
+}
+@media (max-width: 440px) {
+    .licenseEmail {
+        font-size: 0.8em;
+    }
+
+    .socialImg {
+        height: 40px;
+    }
+    .ytImg {
+        width: 80px;
+    }
+    .bcImg {
+        width: 100px;
+    }
+}
