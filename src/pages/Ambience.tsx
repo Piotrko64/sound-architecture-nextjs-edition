@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Baner } from "../ui/baner/Baner";
+import { getYoutubeVideoID } from "../utils/SSG/youtube/getYoutubeVideoID";
 
 const Ambience: NextPage = () => {
     return (
@@ -18,6 +19,9 @@ const Ambience: NextPage = () => {
 };
 
 export default Ambience;
-// export async function getStaticProps() {
-//     Retu
-// }
+export async function getStaticProps() {
+    getYoutubeVideoID();
+    return {
+        props: {},
+    };
+}

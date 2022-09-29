@@ -1,4 +1,4 @@
-import { NextImage } from "../../../../ui/nextImage/NextImage";
+import { NextImage } from "../../../ui/nextImage/NextImage";
 import classes from "./aboveMainFooter.module.css";
 
 export function AboveMainFooter() {
