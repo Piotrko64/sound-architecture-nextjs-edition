@@ -23,6 +23,7 @@ export function NextImage({
         <div onClick={click} className={classes.flexOne}>
             <div className={cx(additionalClass, classes.relative)}>
                 <Image
+                    draggable="false"
                     src={imgURL}
                     alt={title}
                     layout="fill"
