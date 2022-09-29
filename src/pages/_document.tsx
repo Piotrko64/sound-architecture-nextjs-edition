@@ -12,6 +12,10 @@ export default function Document() {
                     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
                     rel="stylesheet"
                 ></link>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+                    rel="stylesheet"
+                ></link>
                 <link rel="shortcut icon" href="./assets/favicon.png"></link>
 
                 <meta

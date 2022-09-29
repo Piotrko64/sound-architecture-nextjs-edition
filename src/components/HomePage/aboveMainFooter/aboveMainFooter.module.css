@@ -1,0 +1,76 @@
+.container {
+    margin-top: 100px;
+    font-family: "Fredericka the Great", cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arrowImg {
+    position: relative;
+    width: 210px;
+    height: 180px;
+}
+.h2 {
+    font-size: 2.7em;
+    font-weight: 400;
+    text-align: center;
+    align-self: flex-start;
+    margin: 0;
+    max-width: 50vw;
+    width: fit-content;
+}
+@media (max-width: 1320px) {
+    .container {
+        max-width: 900px;
+        padding-bottom: 20px;
+    }
+    .h2 {
+        font-size: 2.2em;
+        max-width: 40vw;
+    }
+    .arrowImg {
+        width: 190px;
+        height: 160px;
+    }
+}
+@media (max-width: 920px) {
+    .container {
+        max-width: 800px;
+    }
+    .h2 {
+        font-size: 1.8em;
+    }
+    .arrowImg {
+        width: 140px;
+        height: 120px;
+    }
+}
+@media (max-width: 570px) {
+    .container {
+        max-width: 500px;
+        min-height: 120px;
+        align-items: flex-end;
+    }
+    .h2 {
+        font-size: 1.2em;
+    }
+    .arrowImg {
+        width: 100px;
+        height: 80px;
+    }
+}
+@media (max-width: 440px) {
+    .container {
+        max-width: 400px;
+    }
+    .h2 {
+        font-size: 1.1em;
+    }
+    .arrowImg {
+        width: 90px;
+        height: 75px;
+    }
+}

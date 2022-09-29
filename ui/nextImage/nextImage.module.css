@@ -4,4 +4,5 @@
 }
 .flexOne {
     flex: 1;
+    background-color: var(--backColor);
 }

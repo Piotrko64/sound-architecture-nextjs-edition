@@ -2,9 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import axios from "axios";
 import { InstagramUserInterface } from "../../@types/SSG/InstagramUserInterface";
+import { HomePageMainComponent } from "../components/HomePage/HomePageMainComponent";
 
 const Home: NextPage = ({ posts }: any) => {
-    return <div>{JSON.stringify(posts)}</div>;
+    return <HomePageMainComponent />;
 };
 
 export default Home;
