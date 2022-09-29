@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Baner } from "../../ui/baner/Baner";
+import { Baner } from "../ui/baner/Baner";
 
 const Ambience: NextPage = () => {
     return (

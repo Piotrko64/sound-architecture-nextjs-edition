@@ -1,8 +1,9 @@
 import classes from "./navigation.module.css";
 import cx from "classnames";
 import Link from "next/link";
-import { NextImage } from "../../../ui/nextImage/NextImage";
+
 import { useState } from "react";
+import { NextImage } from "../../ui/nextImage/NextImage";
 
 export function Navigation() {
     const [activeNav, setActiveNavbar] = useState<boolean>(false);

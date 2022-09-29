@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { iframeBandcampDataInterface } from "../../@types/IframeBandcampDataInterface";
-import { Baner } from "../../ui/baner/Baner";
+
 import { SoundsPageMainComponent } from "../components/SoundsPage/SoundsPageMainComponent";
 import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
+import { Baner } from "../ui/baner/Baner";
 import { getBandcampDataDataForIframe } from "../utils/SSG/bandcamp/getBandcampDataForIframe";
 
 const Sounds: NextPage<iframeBandcampDataInterface> = ({ iframeObjects }) => {

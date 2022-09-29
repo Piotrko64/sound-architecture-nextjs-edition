@@ -1,6 +1,6 @@
-import { NextImage } from "../../../ui/nextImage/NextImage";
 import classes from "./footer.module.css";
 import cx from "classnames";
+import { NextImage } from "../../ui/nextImage/NextImage";
 
 export function Footer() {
     return (
