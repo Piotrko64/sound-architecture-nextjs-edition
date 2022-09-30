@@ -26,6 +26,7 @@ export function SearchBar({
                 imgURL={`/assets/searchBar/${valueInput ? "x" : "loupe"}.png`}
                 additionalClass={classes.icon}
                 click={resetInputChange}
+                title={`${valueInput ? "reset" : ""}`}
             />
         </div>
     );

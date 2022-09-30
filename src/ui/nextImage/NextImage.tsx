@@ -31,6 +31,7 @@ export function NextImage({
                     sizes="100vw"
                     placeholder={blurMode ? "blur" : "empty"}
                     blurDataURL={blurMode ? blurURL : "empty"}
+                    title={title}
                 />
             </div>
         </div>
