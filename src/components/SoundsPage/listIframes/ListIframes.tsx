@@ -1,11 +1,10 @@
-import { iframeBandcampData } from "../../../../@types/IframeBandcampDataInterface";
-
 import { OneBandcampIframe } from "../oneBandcampIframe/OneBandcampIframe";
 import { motion, AnimatePresence } from "framer-motion";
 import classes from "./listIframes.module.css";
 import { EmptyResult } from "../../../ui/emptyResult/EmptyResult";
+import { IframeBandcampData } from "../../../@types/iframes/IframeBandcampDataInterface";
 
-export function ListIframes({ listIframesData }: { listIframesData: Array<iframeBandcampData> }) {
+export function ListIframes({ listIframesData }: { listIframesData: Array<IframeBandcampData> }) {
     return (
         <div className={classes.listIframes}>
             <AnimatePresence>
@@ -20,15 +19,7 @@ export function ListIframes({ listIframesData }: { listIframesData: Array<iframe
                     ))}
                 </motion.div>
             </AnimatePresence>
-            {!listIframesData.length && (
-                <motion.div
-                    animate={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: -20 }}
-                    exit={{ opacity: 0 }}
-                >
-                    <EmptyResult />
-                </motion.div>
-            )}
+            <EmptyResult isActive={!listIframesData.length} />
         </div>
     );
 }
