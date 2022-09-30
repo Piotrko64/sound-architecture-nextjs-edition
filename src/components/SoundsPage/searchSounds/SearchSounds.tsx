@@ -1,4 +1,3 @@
-import { SearchingStoreInterface } from "../../../@types/store/SearchingStoreInterface";
 import { useSearchingStore } from "../../../store/useSearchingStore";
 import { SearchBar } from "../../../ui/searchBar/SearchBar";
 

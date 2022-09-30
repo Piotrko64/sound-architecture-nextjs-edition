@@ -1,5 +1,5 @@
 import { useSearchingStore } from "../../store/useSearchingStore";
-import { filterByMusicTitle } from "../../helpers/youtubeTools/filterByMusicTitle";
+import { filterByMusicTitle } from "../../helpers/bandcampTools/filterByMusicTitle";
 import { ListIframes } from "./listIframes/ListIframes";
 import { SearchSounds } from "./searchSounds/SearchSounds";
 import classes from "./soundsPageMainComponent.module.css";
