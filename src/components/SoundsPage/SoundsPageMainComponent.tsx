@@ -1,6 +1,6 @@
 import { iframeBandcampData } from "../../../@types/IframeBandcampDataInterface";
 import { useSearchingStore } from "../../store/useSearchingStore";
-import { filterByMusicTitle } from "../../utils/filterByMusicTitle";
+import { filterByMusicTitle } from "../../utils/youtubeTools/filterByMusicTitle";
 import { ListIframes } from "./listIframes/ListIframes";
 import { SearchSounds } from "./searchSounds/SearchSounds";
 import classes from "./soundsPageMainComponent.module.css";
