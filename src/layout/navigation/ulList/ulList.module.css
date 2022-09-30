@@ -66,10 +66,16 @@
 .socialMobile {
     display: none;
 }
+.imgSocial {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+}
 @media (max-width: 992px) {
     .socialMobile {
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
     }
     .stripe {
         display: none;
@@ -84,6 +90,9 @@
         background-color: var(--backColor);
         left: 100%;
         transition: all 0.3s ease-in-out;
+    }
+    .navBtn {
+        display: flex;
     }
     .li:first-child {
         padding: 15px;
