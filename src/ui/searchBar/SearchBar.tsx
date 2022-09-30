@@ -1,4 +1,5 @@
 import { ChangeEvent } from "react";
+import classes from "./searchBar.module.css";
 
 export function SearchBar({
     valueInput,
@@ -13,7 +14,7 @@ export function SearchBar({
 
     return (
         <>
-            <input value={valueInput} onChange={handleInputChange} />
+            <input value={valueInput} onChange={handleInputChange} className={classes.input} />
         </>
     );
 }
