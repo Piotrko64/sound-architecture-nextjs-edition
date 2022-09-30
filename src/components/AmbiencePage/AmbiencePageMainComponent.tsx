@@ -1,6 +1,5 @@
-import { ArrayYTDataIframe } from "../../@types/IframeYTDataType";
+import { ArrayYTDataIframe } from "../../@types/iframes/IframeYTDataType";
 import { Baner } from "../../ui/baner/Baner";
-import { ListIframes } from "../SoundsPage/listIframes/ListIframes";
 import { ListYTIframes } from "./listYTIframes/ListYTIframes";
 
 export function AmbiencePageMainComponent({ iframesData }: { iframesData: ArrayYTDataIframe }) {

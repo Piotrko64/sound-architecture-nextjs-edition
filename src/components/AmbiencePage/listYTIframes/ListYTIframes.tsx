@@ -1,4 +1,4 @@
-import { ArrayYTDataIframe } from "../../../@types/IframeYTDataType";
+import { ArrayYTDataIframe } from "../../../@types/iframes/IframeYTDataType";
 import { OneYTIframe } from "../oneYTIframe/OneYTIframe";
 
 export function ListYTIframes({ listIframes }: { listIframes: ArrayYTDataIframe }) {

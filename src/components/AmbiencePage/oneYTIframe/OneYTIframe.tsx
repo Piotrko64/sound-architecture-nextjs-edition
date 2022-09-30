@@ -1,4 +1,4 @@
-import { YTDataToIframe } from "../../../@types/IframeYTDataType";
+import { YTDataToIframe } from "../../../@types/iframes/IframeYTDataType";
 
 export function OneYTIframe({ iframeData }: { iframeData: YTDataToIframe }) {
     const { title, videoId, description } = iframeData;
