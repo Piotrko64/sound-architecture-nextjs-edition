@@ -1,11 +1,15 @@
 import { iframeBandcampData } from "../../../../@types/IframeBandcampDataInterface";
+import classes from "./oneBandcampIframe.module.css";
 
 export function OneBandcampIframe({ srcIframe, hrefAnchor, title }: iframeBandcampData) {
     return (
-        <>
-            <iframe style={{ border: 0, width: "100%", height: "42px" }} src={srcIframe} seamless>
-                <a href={hrefAnchor}>{title}</a>
-            </iframe>
-        </>
+        <div className={classes.containerEntireIframe}>
+            <div className={classes.subContainer}>
+                <iframe src={srcIframe} seamless className={classes.iframe}>
+                    <a href={hrefAnchor}>{title}</a>
+                </iframe>
+                <div className={classes.titleBack}>{title}</div>
+            </div>
+        </div>
     );
 }

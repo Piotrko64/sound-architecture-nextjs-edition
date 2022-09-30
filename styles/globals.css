@@ -29,6 +29,11 @@ body::-webkit-scrollbar-thumb {
 }
 :root {
     --backColor: #0f0f0f;
+    --helpColor: #2f2f2f;
+}
+
+#player {
+    max-width: none;
 }
 
 .centerFlex {

@@ -1,0 +1,51 @@
+.containerEntireIframe {
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+}
+.subContainer {
+    height: 42px;
+    position: relative;
+    background-color: var(--helpColor);
+}
+.iframe {
+    height: 42px;
+    min-width: 700px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 3;
+}
+.titleBack {
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+@media (max-width: 1320px) {
+    .iframe {
+        min-width: 600px;
+    }
+}
+@media (max-width: 920px) {
+    .iframe {
+        min-width: 550px;
+    }
+}
+@media (max-width: 570px) {
+    .iframe {
+        min-width: 400px;
+    }
+}
+@media (max-width: 440px) {
+    .iframe {
+        min-width: 340px;
+    }
+}

@@ -2,15 +2,27 @@
     width: 100%;
     border: none;
     border-bottom: 3px solid white;
-    background-color: #2f2f2f;
+    background-color: var(--helpColor);
     padding: 2px 5px;
     font-size: 1.2rem;
     font-family: "Jost";
     color: white;
-    margin: 40px 0;
+    padding-right: 35px;
     transition: all 0.2s ease-in-out;
+}
+.containerInput {
+    position: relative;
+    margin: 40px 0;
+}
+.icon {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
 }
 .input:focus {
     outline: none;
-    background-color: var(--bcakColor);
+    background-color: var(--backColor);
 }

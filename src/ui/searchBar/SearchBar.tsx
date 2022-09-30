@@ -1,20 +1,32 @@
-import { ChangeEvent } from "react";
+import { ChangeEvent, useRef } from "react";
+import { NextImage } from "../nextImage/NextImage";
 import classes from "./searchBar.module.css";
 
 export function SearchBar({
     valueInput,
-    change,
+    changeValue,
 }: {
     valueInput: string;
-    change: (newState: string) => void;
+    changeValue: (newState: string) => void;
 }) {
+    const input = useRef<HTMLInputElement>(null);
+
     function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
-        change(event.target.value);
+        changeValue(event.target.value);
+    }
+    function resetInputChange() {
+        changeValue("");
+        input.current!.focus();
     }
 
     return (
-        <>
-            <input value={valueInput} onChange={handleInputChange} className={classes.input} />
-        </>
+        <div className={classes.containerInput}>
+            <input value={valueInput} onChange={handleInputChange} className={classes.input} ref={input} />
+            <NextImage
+                imgURL={`/assets/searchBar/${valueInput ? "x" : "loupe"}.png`}
+                additionalClass={classes.icon}
+                click={resetInputChange}
+            />
+        </div>
     );
 }

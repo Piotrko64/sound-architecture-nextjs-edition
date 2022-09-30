@@ -1,0 +1,8 @@
+.h1 {
+    font-size: 2rem;
+    font-family: "Fredericka the Great", cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0;
+}
