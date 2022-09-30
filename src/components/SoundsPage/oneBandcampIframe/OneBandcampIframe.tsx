@@ -1,8 +1,8 @@
-import { iframeBandcampData } from "../../../../@types/IframeBandcampDataInterface";
 import classes from "./oneBandcampIframe.module.css";
 import { motion } from "framer-motion";
+import { IframeBandcampData } from "../../../@types/iframes/IframeBandcampDataInterface";
 
-export function OneBandcampIframe({ srcIframe, hrefAnchor, title }: iframeBandcampData) {
+export function OneBandcampIframe({ srcIframe, hrefAnchor, title }: IframeBandcampData) {
     return (
         <motion.div
             layout
