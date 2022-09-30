@@ -1,4 +1,4 @@
-import { iframeBandcampData } from "./../../@types/IframeBandcampDataInterface";
+import { iframeBandcampData } from "../../../@types/IframeBandcampDataInterface";
 export function filterByMusicTitle(arrayMusic: Array<iframeBandcampData>, titleFilter: string) {
     if (titleFilter.trim() === "") {
         return arrayMusic;

@@ -1,8 +1,9 @@
 import { iframeBandcampData } from "../../../../@types/IframeBandcampDataInterface";
-import { EmptyResult } from "../../../ui/emptyResult/emptyResult";
+
 import { OneBandcampIframe } from "../oneBandcampIframe/OneBandcampIframe";
 import { motion, AnimatePresence } from "framer-motion";
 import classes from "./listIframes.module.css";
+import { EmptyResult } from "../../../ui/emptyResult/EmptyResult";
 
 export function ListIframes({ listIframesData }: { listIframesData: Array<iframeBandcampData> }) {
     return (
