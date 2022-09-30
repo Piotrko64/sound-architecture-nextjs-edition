@@ -7,7 +7,7 @@ import { exampleInstagramData } from "../data/exampleInstagramData";
 import { InstagramUserInterface } from "../@types/SSG/InstagramUserInterface";
 
 const Home: NextPage = ({ instagramImagesUrl }: any) => {
-    return <HomePageMainComponent instagramImagesUrl={instagramImagesUrl} />;
+    return <HomePageMainComponent />;
 };
 
 export default Home;
