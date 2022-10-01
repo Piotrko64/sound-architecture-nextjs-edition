@@ -34,7 +34,11 @@ export function UlList() {
                 onMouseOut={() => setIsVisible(false)}
             >
                 <Link href="/Sounds">
-                    <li className={cx(classes.li)} onMouseEnter={handleHoverLink}>
+                    <li
+                        className={cx(classes.li)}
+                        onMouseEnter={handleHoverLink}
+                        onClick={() => setActiveNavbar(false)}
+                    >
                         Sound Effects
                     </li>
                 </Link>
