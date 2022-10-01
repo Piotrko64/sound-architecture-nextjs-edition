@@ -43,9 +43,15 @@
     .iframe {
         min-width: 400px;
     }
+    .titleBack {
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 440px) {
     .iframe {
         min-width: 340px;
+    }
+    .titleBack {
+        font-size: 0.75rem;
     }
 }

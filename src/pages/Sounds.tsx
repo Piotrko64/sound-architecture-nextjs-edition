@@ -30,37 +30,37 @@ const Sounds: NextPage<IframeBandcampDataInterface> = ({ iframeObjects }) => {
                         srcIframe:
                             "https://bandcamp.com/EmbeddedPlayer/album=2587588493/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/",
                         hrefAnchor: "https://soundarchitecture.bandcamp.com/album/porto-katsiki-ambience",
-                        title: "Porto Katsiki Ambience by Sound Architecture",
+                        title: "Porto Katsiki Ambience ",
                     },
                     {
                         srcIframe:
                             "https://bandcamp.com/EmbeddedPlayer/album=1551662299/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/",
                         hrefAnchor: "https://soundarchitecture.bandcamp.com/album/krka-waterfall",
-                        title: "Krka Waterfall by Sound Architecture",
+                        title: "Krka Waterfall ",
                     },
                     {
                         srcIframe:
                             "https://bandcamp.com/EmbeddedPlayer/album=2502325091/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/",
                         hrefAnchor: "https://soundarchitecture.bandcamp.com/album/swish-sound-effects",
-                        title: "Swish - Sound Effects by Sound Architecture",
+                        title: "Swish - Sound Effects ",
                     },
                     {
                         srcIframe:
                             "https://bandcamp.com/EmbeddedPlayer/album=714654310/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/",
                         hrefAnchor: "https://soundarchitecture.bandcamp.com/album/air-conditioner",
-                        title: "Air Conditioner by Sound Architecture",
+                        title: "Air Conditioner",
                     },
                     {
                         srcIframe:
                             "https://bandcamp.com/EmbeddedPlayer/album=1887217169/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/",
                         hrefAnchor: "https://soundarchitecture.bandcamp.com/album/countryside-ambience",
-                        title: "Countryside Ambience by Sound Architecture",
+                        title: "Countryside Ambience",
                     },
                     {
                         srcIframe:
                             "https://bandcamp.com/EmbeddedPlayer/album=2608927152/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/",
                         hrefAnchor: "https://soundarchitecture.bandcamp.com/album/windy-marina-ambience",
-                        title: "Windy Marina Ambience by Sound Architecture",
+                        title: "Windy Marina Ambience ",
                     },
                 ]}
             />
