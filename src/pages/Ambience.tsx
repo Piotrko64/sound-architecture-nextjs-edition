@@ -68,7 +68,7 @@ const Ambience: NextPage = () => {
 
 export default Ambience;
 // export async function getStaticProps() {
-//     getYoutubeVideos();
+// getYoutubeVideos();
 //     return {
 //         props: {},
 //     };

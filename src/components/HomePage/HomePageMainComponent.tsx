@@ -1,12 +1,15 @@
-import { NextImage } from "../../ui/nextImage/NextImage";
 import { AboveMainFooter } from "./aboveMainFooter/AboveMainFooterComponent";
-import { RichText } from "@graphcms/rich-text-react-renderer";
+import { TheHeader } from "./header/TheHeader";
+import { LatestNews } from "./latestNews/LatestNews";
+import { PostHygraph } from "../../@types/graphql/PostHygraph";
 
-export function HomePageMainComponent({ dataProject }: any) {
+export function HomePageMainComponent({ dataPost }: PostHygraph) {
     return (
         <>
-            <img src={dataProject.photoPost.url} />
-            <RichText content={dataProject.textPost.raw} />
+            {/* <img src={dataProject.photoPost.url} />
+            <RichText content={dataProject.textPost.raw} /> */}
+            <TheHeader />
+            <LatestNews dataPost={dataPost} />
             <AboveMainFooter />
         </>
     );

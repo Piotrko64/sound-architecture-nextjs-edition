@@ -1,0 +1,17 @@
+.container {
+    position: absolute;
+    height: 100%;
+    background-color: var(--backColor);
+    font-family: "Abril Fatface", cursive;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 500px;
+}
+.h1 {
+    font-weight: 400;
+    color: white;
+    padding-right: 40px;
+    font-size: 4.1em;
+}
