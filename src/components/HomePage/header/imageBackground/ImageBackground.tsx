@@ -1,4 +1,4 @@
-import classes from "./imageBAckground.module.css";
+import classes from "./imageBackground.module.css";
 import { NextImage } from "../../../../ui/nextImage/NextImage";
 
 export function ImageBackground() {
