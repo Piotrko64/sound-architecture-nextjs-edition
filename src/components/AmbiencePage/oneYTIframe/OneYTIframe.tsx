@@ -1,11 +1,18 @@
 import { YTDataToIframe } from "../../../@types/iframes/IframeYTDataType";
 import classes from "./oneYTIframe.module.css";
+import { motion } from "framer-motion";
 
 export function OneYTIframe({ iframeData }: { iframeData: YTDataToIframe }) {
     const { title, videoId, description } = iframeData;
 
     return (
-        <div className={classes.containerIframe}>
+        <motion.div
+            className={classes.containerIframe}
+            layout
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            exit={{ opacity: 0 }}
+        >
             <iframe
                 className={classes.iframe}
                 src={`https://www.youtube.com/embed/${videoId}`}
@@ -16,6 +23,6 @@ export function OneYTIframe({ iframeData }: { iframeData: YTDataToIframe }) {
             ></iframe>
             <h2 className={classes.h2}>{title}</h2>
             <p className={classes.p}>{description}</p>
-        </div>
+        </motion.div>
     );
 }
