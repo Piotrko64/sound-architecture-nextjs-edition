@@ -1,8 +1,11 @@
 import classes from "./footer.module.css";
 import cx from "classnames";
 import { NextImage } from "../../ui/nextImage/NextImage";
+import { useLicense } from "../../store/useLicense";
 
 export function Footer() {
+    const { toggleOpenLicense } = useLicense();
+
     return (
         <footer className={cx(classes.footer, "globalPadding")}>
             <div className={classes.mainInfo}>
@@ -11,8 +14,12 @@ export function Footer() {
                     additionalClass={cx(classes.socialImg, classes.ytImg)}
                 />
                 <div className={classes.licenseEmail}>
-                    <div className={classes.license}>License Agreement</div>
-                    <div className={classes.email}>Email</div>
+                    <div className={classes.license} onClick={() => toggleOpenLicense(true)}>
+                        License Agreement
+                    </div>
+                    <div className={classes.email}>
+                        <a href="mailto: soundarchitecture@outlook.com">Email</a>
+                    </div>
                 </div>
                 <NextImage
                     imgURL="/assets/footer/band.webp"
