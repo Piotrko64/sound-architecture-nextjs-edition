@@ -3,20 +3,33 @@
     font-family: "Fredericka the Great", cursive;
     font-size: 2.6em;
     font-weight: 400;
-    margin-top: 2rem;
-    margin-bottom: 1.6rem;
+    padding-top: 2rem;
+    padding-bottom: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .contentNews {
-    max-width: 1000px;
+    max-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--backColor);
 }
 @media (max-width: 920px) {
+    .contentNews {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .h2 {
         font-size: 2.4em;
     }
 }
 @media (max-width: 570px) {
+    .contentNews {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .h2 {
         font-size: 1.8em;
     }

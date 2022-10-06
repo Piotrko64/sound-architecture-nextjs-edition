@@ -1,5 +1,7 @@
 .footer {
     background-color: var(--backColor);
+    z-index: 4;
+    position: relative;
 }
 .mainInfo {
     max-width: 1700px;

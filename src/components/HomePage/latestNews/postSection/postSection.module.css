@@ -1,7 +1,7 @@
 .image {
     height: 580px;
     width: 100%;
-    flex: none;
+    position: relative;
 }
 .section {
     margin-bottom: 100px;

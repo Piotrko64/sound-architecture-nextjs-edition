@@ -9,9 +9,7 @@ export function BandcampSection() {
                 src="https://bandcamp.com/EmbeddedPlayer/album=3918256789/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
                 seamless
             >
-                <a href="https://soundarchitecture.bandcamp.com/album/sailing-ambience">
-                    Sailing Ambience by Sound Architecture
-                </a>
+                Sailing Ambience by Sound Architecture
             </iframe>
         </div>
     );
