@@ -7,9 +7,9 @@ import classes from "./listYTIframes.module.css";
 export function ListYTIframes({ listIframes }: { listIframes: ArrayYTDataIframe }) {
     return (
         <>
-            <div className={classes.listContainer}>
+            <div>
                 <AnimatePresence>
-                    <motion.div layout>
+                    <motion.div layout className={classes.listContainer}>
                         {listIframes.map((iframe) => (
                             <OneYTIframe key={iframe.title} iframeData={iframe} />
                         ))}

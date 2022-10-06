@@ -7,11 +7,11 @@ export function OneYTIframe({ iframeData }: { iframeData: YTDataToIframe }) {
 
     return (
         <motion.div
-            className={classes.containerIframe}
             layout
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}
+            className={classes.containerIframe}
         >
             <iframe
                 className={classes.iframe}

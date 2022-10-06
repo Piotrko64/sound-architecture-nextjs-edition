@@ -29,10 +29,12 @@
     .section {
         margin-left: auto;
         margin-right: auto;
-        width: auto;
+        width: 100%;
+        max-width: 100vh;
     }
     .image {
         height: 400px;
+        aspect-ratio: 1.2;
     }
 }
 @media (max-width: 570px) {
