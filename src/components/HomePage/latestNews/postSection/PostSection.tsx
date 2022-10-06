@@ -13,7 +13,11 @@ export function PostSection({ dataPost }: PostHygraph) {
         <section className={classes.row}>
             <div className={classes.section}>
                 <div>
-                    <Swiper className={cx("mySwiper")} autoplay={{ delay: 3000 }} modules={[Autoplay]}>
+                    <Swiper
+                        className={cx("mySwiper", classes.overflow)}
+                        autoplay={{ delay: 3000 }}
+                        modules={[Autoplay]}
+                    >
                         <SwiperSlide>
                             <NextImage
                                 additionalClass={cx(classes.image)}

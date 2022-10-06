@@ -1,20 +1,27 @@
 .h2 {
     text-align: center;
     font-family: "Fredericka the Great", cursive;
-    font-size: 2.6em;
+    font-size: 2.8em;
     font-weight: 400;
     padding-top: 2rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1.9rem;
     margin-top: 0;
     margin-bottom: 0;
 }
 .contentNews {
-    max-width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+    max-width: 1300px;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--backColor);
+}
+@media (max-width: 1600px) {
+    .contentNews {
+        max-width: 1200px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 @media (max-width: 920px) {
     .contentNews {
