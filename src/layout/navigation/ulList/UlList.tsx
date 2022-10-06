@@ -2,7 +2,7 @@ import classes from "./ulList.module.css";
 import cx from "classnames";
 import Link from "next/link";
 import { useState } from "react";
-import { NextImage } from "../../../ui/nextImage/NextImage";
+import { SocialList } from "../socialList/SocialList";
 
 export function UlList() {
     const [activeNav, setActiveNavbar] = useState<boolean>(false);
@@ -53,8 +53,7 @@ export function UlList() {
                     </li>
                 </Link>
                 <div className={cx(classes.socialMobile)}>
-                    <NextImage imgURL="/assets/socials/smallYT.webp" additionalClass={classes.imgSocial} />
-                    <NextImage imgURL="/assets/socials/smallBC.webp" additionalClass={classes.imgSocial} />
+                    <SocialList />
                 </div>
             </ul>
         </>

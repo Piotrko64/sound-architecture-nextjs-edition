@@ -2,7 +2,7 @@ import classes from "./ytSection.module.css";
 
 export function YtSection() {
     return (
-        <>
+        <div className="globalPadding">
             <iframe
                 className={classes.iframe}
                 src="https://www.youtube.com/embed/-nIWTWAoiGg"
@@ -11,6 +11,6 @@ export function YtSection() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
             ></iframe>
-        </>
+        </div>
     );
 }
