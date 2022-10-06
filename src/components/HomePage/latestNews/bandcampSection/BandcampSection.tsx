@@ -4,9 +4,9 @@ export function BandcampSection() {
     return (
         <div className={classes.containerIframe}>
             <iframe
-                style={{ border: 0, width: "350px", height: "470px" }}
+                style={{ border: 0, height: "780px" }}
                 className={classes.iframe}
-                src="https://bandcamp.com/EmbeddedPlayer/album=3918256789/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                src="https://bandcamp.com/EmbeddedPlayer/album=3918256789/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
                 seamless
             >
                 <a href="https://soundarchitecture.bandcamp.com/album/sailing-ambience">
