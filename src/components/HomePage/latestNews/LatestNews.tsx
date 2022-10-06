@@ -2,7 +2,7 @@ import { PostHygraph } from "../../../@types/graphql/PostHygraph";
 import { BandcampSection } from "./bandcampSection/BandcampSection";
 import classes from "./latestNews.module.css";
 import { PostSection } from "./postSection/PostSection";
-import { YtSection } from "./ytSection/ytSection";
+import { YtSection } from "./ytSection/YtSection";
 
 export function LatestNews({ dataPost }: PostHygraph) {
     return (
