@@ -1,21 +1,21 @@
 import { YTDataToIframe } from "../../../@types/iframes/IframeYTDataType";
+import classes from "./oneYTIframe.module.css";
 
 export function OneYTIframe({ iframeData }: { iframeData: YTDataToIframe }) {
     const { title, videoId, description } = iframeData;
 
     return (
-        <>
+        <div className={classes.containerIframe}>
             <iframe
-                width="560"
-                height="315"
+                className={classes.iframe}
                 src={`https://www.youtube.com/embed/${videoId}`}
                 title={title}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
             ></iframe>
-            <h1>{title}</h1>
-            <p>{description}</p>
-        </>
+            <h2 className={classes.h2}>{title}</h2>
+            <p className={classes.p}>{description}</p>
+        </div>
     );
 }

@@ -14,23 +14,6 @@ const Ambience: NextPage = () => {
             <AmbiencePageMainComponent
                 iframesData={[
                     {
-                        videoId: "y8EvClrhZVc",
-                        title: "Ambience: Sea Waves, On Board, Waves, Water Splash, Island | 1 Hour",
-                        description:
-                            "Atmospheric ambience. Sound of sailing boat crashing water waves. Water splashes. Sailing near sandy island ",
-                    },
-                    {
-                        videoId: "Zh3JGIMWdnE",
-                        title: "Ambience: White Noise, Waterfall, Nature Sounds, Sleep Sound, Falling Water | 2 Hours",
-                        description: "Waterfall ambience straight from Tirol.  Nature sleep sounds.",
-                    },
-                    {
-                        videoId: "E5LclqEUKO0",
-                        title: "Ambience: Cicadas, Light wind, Water waves, Nature sounds, Background sound | 1 Hour",
-                        description:
-                            "Cicadas ambience with light wind and waves in the background. Nature sleep sounds.",
-                    },
-                    {
                         videoId: "9Z9xrHg5Szw",
                         title: "Ambience: Small Town Rain, Street Rain, City Rain, Town Traffic | 1 Hour",
                         description:

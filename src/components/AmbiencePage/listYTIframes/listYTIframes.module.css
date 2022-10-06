@@ -1,0 +1,14 @@
+.listContainer {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    max-width: 1250px;
+
+    grid-auto-rows: auto;
+    justify-content: space-between;
+}
+@media (max-width: 920px) {
+    .listContainer {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}

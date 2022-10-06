@@ -4,9 +4,7 @@ import cx from "classnames";
 export function TextHeader() {
     return (
         <div className={cx(classes.container, "globalPadding")}>
-            <h1 className={classes.h1}>
-                Sound <br /> Architecture
-            </h1>
+            <h1 className={classes.h1}>Sound Architecture</h1>
         </div>
     );
 }

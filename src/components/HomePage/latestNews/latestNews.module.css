@@ -4,3 +4,8 @@
     font-size: 2.6em;
     font-weight: 400;
 }
+.contentNews {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}

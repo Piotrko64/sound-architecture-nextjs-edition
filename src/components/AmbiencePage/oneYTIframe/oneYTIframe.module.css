@@ -1,0 +1,23 @@
+.containerIframe {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+    flex-direction: column;
+    display: flex;
+}
+.h2 {
+    font-size: 1.55em;
+}
+.iframe {
+    width: 100%;
+    aspect-ratio: 1.7777;
+}
+.p {
+    margin-top: 0;
+}
+@media (max-width: 920px) {
+    .h2 {
+        font-size: 1.2em;
+    }
+}
