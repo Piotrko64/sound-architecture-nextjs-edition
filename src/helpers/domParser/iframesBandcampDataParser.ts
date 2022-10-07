@@ -7,6 +7,7 @@ export function iframesBandcampDataParser(iframesString: ArrayIframesBandcamp) {
         const elementHTML = parse(iframe.iframeLink);
         const iframeElement = elementHTML.querySelector("iframe");
         const anchorSelector = elementHTML?.querySelector("a");
+
         return {
             srcIframe: iframeElement?.getAttribute("src"),
             hrefAnchor: anchorSelector?.getAttribute("href"),
