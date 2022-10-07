@@ -4,7 +4,6 @@ import { sliceOnlyTitle } from "../../utils/SSG/youtube/sliceOnlyTitle";
 
 export function iframesBandcampDataParser(iframesString: ArrayIframesBandcamp) {
     return iframesString.filter(Boolean).map((iframe) => {
-        console.log("aaaa", iframe);
         const elementHTML = parse(iframe.iframeLink);
         const iframeElement = elementHTML.querySelector("iframe");
         const anchorSelector = elementHTML?.querySelector("a");
