@@ -31,7 +31,7 @@
         margin-right: auto;
         width: 100%;
         max-width: 100vh;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .image {
         height: 400px;
@@ -41,5 +41,8 @@
 @media (max-width: 570px) {
     .image {
         height: 280px;
+    }
+    .row {
+        gap: 40px;
     }
 }
