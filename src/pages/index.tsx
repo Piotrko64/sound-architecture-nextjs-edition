@@ -1,19 +1,23 @@
 import type { NextPage } from "next";
-import { PostHygraph } from "../@types/graphql/PostHygraph";
+import { PropsHomepage } from "../@types/iframes/PropsHomepage";
 import { HomePageMainComponent } from "../components/HomePage/HomePageMainComponent";
-import { getHygraphPost } from "../helpers/hygraph/getHygraphPost";
+import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
+import { getBandcampDataDataForIframe } from "../utils/SSG/bandcamp/getBandcampDataForIframe";
+import { getYoutubeVideos } from "../utils/SSG/youtube/getYoutubeVideos";
 
-const Home: NextPage<PostHygraph> = ({ dataPost }) => {
-    return <HomePageMainComponent dataPost={dataPost} />;
+const Home: NextPage<PropsHomepage> = ({ newYtIframeData, newBandcampIframe }) => {
+    return <HomePageMainComponent newYtIframeData={newYtIframeData} newBandcampIframe={newBandcampIframe} />;
 };
 
 export default Home;
 export async function getStaticProps() {
-    const postData = await getHygraphPost();
+    const newYtIframeData = await (await getYoutubeVideos()).at(-1);
+    const newBandcampIframe = await iframesBandcampDataParser(await getBandcampDataDataForIframe())[0];
 
     return {
         props: {
-            dataPost: postData,
+            newYtIframeData,
+            newBandcampIframe,
         },
     };
 }

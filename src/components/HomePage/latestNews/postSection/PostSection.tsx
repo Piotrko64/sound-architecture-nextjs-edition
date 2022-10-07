@@ -7,8 +7,10 @@ import { Swiper, SwiperSlide } from "../../../../../node_modules/swiper/react";
 import cx from "classnames";
 import "swiper/css";
 import { Autoplay } from "swiper";
+import { InfoBandcampIframe } from "../../../../@types/SSG/ArrayIframesBandcamp";
+import { OneBandcampIframData } from "../../../../@types/iframes/PropsHomepage";
 
-export function PostSection() {
+export function PostSection({ newBandcampIframe }: { newBandcampIframe: OneBandcampIframData }) {
     return (
         <section className={classes.row}>
             <div className={classes.section}>
@@ -41,7 +43,7 @@ export function PostSection() {
                     similique quia, dicta a voluptatum atque ipsam quasi!
                 </div>
             </div>
-            <BandcampSection />
+            <BandcampSection newBandcampIframe={newBandcampIframe} />
         </section>
     );
 }

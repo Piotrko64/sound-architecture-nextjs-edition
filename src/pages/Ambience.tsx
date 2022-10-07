@@ -1,9 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { ArrayYTDataIframe } from "../@types/iframes/IframeYTDataType";
-
 import { AmbiencePageMainComponent } from "../components/AmbiencePage/AmbiencePageMainComponent";
-import { Baner } from "../ui/baner/Baner";
 import { getYoutubeVideos } from "../utils/SSG/youtube/getYoutubeVideos";
 
 const Ambience: NextPage<{ dataYTVideos: ArrayYTDataIframe }> = ({ dataYTVideos }) => {

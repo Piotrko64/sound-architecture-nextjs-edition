@@ -2,18 +2,18 @@ import { ChangeEvent, useRef } from "react";
 import { NextImage } from "../nextImage/NextImage";
 import classes from "./searchBar.module.css";
 
-export function SearchBar({
-    valueInput,
-    changeValue,
-}: {
+type Props = {
     valueInput: string;
     changeValue: (newState: string) => void;
-}) {
+};
+
+export function SearchBar({ valueInput, changeValue }: Props) {
     const input = useRef<HTMLInputElement>(null);
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
         changeValue(event.target.value);
     }
+
     function resetInputChange() {
         changeValue("");
         input.current!.focus();

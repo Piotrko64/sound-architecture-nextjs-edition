@@ -2,15 +2,7 @@ import Image from "next/image";
 import cx from "classnames";
 import classes from "./nextImage.module.css";
 
-export function NextImage({
-    imgURL,
-    additionalClass,
-    click,
-    title,
-    blurMode,
-    coverMode,
-    blurURL,
-}: {
+type Props = {
     imgURL: string;
     additionalClass: string;
     click?: () => void;
@@ -18,7 +10,9 @@ export function NextImage({
     coverMode?: boolean;
     blurMode?: boolean;
     blurURL?: string;
-}) {
+};
+
+export function NextImage({ imgURL, additionalClass, click, title, blurMode, coverMode, blurURL }: Props) {
     return (
         <div onClick={click} className={classes.flexOne}>
             <div className={cx(additionalClass, classes.relative)}>
