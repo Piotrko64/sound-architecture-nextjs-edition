@@ -29,7 +29,7 @@ export default Sounds;
 export async function getStaticProps() {
     const iframeData = await getBandcampDataDataForIframe();
     const iframeObjects = iframesBandcampDataParser(iframeData);
-    console.log(iframeObjects);
+
     return {
         props: { iframeObjects },
     };
