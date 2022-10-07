@@ -39,6 +39,9 @@ export async function getBandcampDataDataForIframe() {
         const bigSizeElement = await page.$(".sizechoice.large > .sizepreview");
         await bigSizeElement?.click();
 
+        const checkbox = await page.$('label > input[data-bind="checked: show_tracklist"]');
+        await checkbox?.click();
+
         const inputElement = await page.$("input.embed_text");
 
         const dataIframe = await page.evaluate((element) => {
