@@ -5,5 +5,9 @@ export function filterByMusicTitle(arrayMusic: Array<IframeBandcampData>, titleF
         return arrayMusic;
     }
 
-    return arrayMusic.filter((sound) => sound.title.toUpperCase().includes(titleFilter.trim().toUpperCase()));
+    return arrayMusic.filter(
+        (sound) =>
+            sound.generalTitle.toUpperCase().includes(titleFilter.trim().toUpperCase()) ||
+            sound.mainTitle.toUpperCase().includes(titleFilter.trim().toUpperCase())
+    );
 }

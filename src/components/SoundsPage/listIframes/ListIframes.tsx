@@ -9,12 +9,12 @@ export function ListIframes({ listIframesData }: { listIframesData: Array<Iframe
         <div className={classes.listIframes}>
             <AnimatePresence>
                 <motion.div layout>
-                    {listIframesData.map(({ srcIframe, hrefAnchor, title }) => (
+                    {listIframesData.map(({ srcIframe, hrefAnchor, generalTitle }) => (
                         <OneBandcampIframe
-                            key={title}
+                            key={generalTitle}
                             srcIframe={srcIframe}
                             hrefAnchor={hrefAnchor}
-                            title={title}
+                            generalTitle={generalTitle}
                         />
                     ))}
                 </motion.div>

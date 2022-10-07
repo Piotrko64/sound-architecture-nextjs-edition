@@ -2,7 +2,9 @@ import classes from "./oneBandcampIframe.module.css";
 import { motion } from "framer-motion";
 import { IframeBandcampData } from "../../../@types/iframes/IframeBandcampDataInterface";
 
-export function OneBandcampIframe({ srcIframe, hrefAnchor, title }: IframeBandcampData) {
+type Props = Omit<IframeBandcampData, "mainTitle">;
+
+export function OneBandcampIframe({ srcIframe, hrefAnchor, generalTitle }: Props) {
     return (
         <motion.div
             layout
@@ -14,7 +16,7 @@ export function OneBandcampIframe({ srcIframe, hrefAnchor, title }: IframeBandca
             <div className={classes.subContainer}>
                 <iframe src={srcIframe} seamless className={classes.iframe}></iframe>
                 <a className={classes.titleBack} href={hrefAnchor}>
-                    {title}
+                    {generalTitle}
                 </a>
             </div>
         </motion.div>

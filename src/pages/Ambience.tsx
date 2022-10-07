@@ -53,6 +53,9 @@ export default Ambience;
 // export async function getStaticProps() {
 // getYoutubeVideos();
 //     return {
-//         props: {},
+//         props: {
+
+//             video: gey
+//         },
 //     };
 // }

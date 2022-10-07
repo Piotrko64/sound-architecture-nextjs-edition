@@ -12,7 +12,7 @@ export async function getYoutubeVideos() {
 
     const objectsForIframe = fetchData.map((video) => ({
         videoId: video.resourceId.videoId,
-        title: sliceOnlyTitle(video.title),
+        title: video.title,
         description: getFirstLineDescription(video.description),
     }));
     console.log(objectsForIframe);
