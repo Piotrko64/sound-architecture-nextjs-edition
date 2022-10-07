@@ -17,6 +17,6 @@
 }
 @media (max-width: 440px) {
     .containerIframe {
-        max-width: 310px;
+        max-width: none;
     }
 }

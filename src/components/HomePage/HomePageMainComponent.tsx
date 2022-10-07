@@ -10,7 +10,7 @@ export function HomePageMainComponent({ newYtIframeData, newBandcampIframe }: Pr
         <>
             <TheHeader />
 
-            <NextImage additionalClass={classes.imageBack} imgURL="/assets/home/background.JPG" coverMode />
+            {/* <NextImage additionalClass={classes.imageBack} imgURL="/assets/home/background.JPG" coverMode /> */}
 
             <article className={classes.underHeader}>
                 <LatestNews newYtIframeData={newYtIframeData} newBandcampIframe={newBandcampIframe} />
