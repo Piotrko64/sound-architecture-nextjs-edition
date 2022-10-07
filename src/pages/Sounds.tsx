@@ -9,7 +9,6 @@ import { Baner } from "../ui/baner/Baner";
 import { getBandcampDataDataForIframe } from "../utils/SSG/bandcamp/getBandcampDataForIframe";
 
 const Sounds: NextPage<IframeBandcampDataInterface> = ({ iframeObjects }) => {
-    console.log(iframeObjects);
     return (
         <div>
             <Head>

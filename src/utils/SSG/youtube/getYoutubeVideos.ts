@@ -15,6 +15,6 @@ export async function getYoutubeVideos() {
         title: video.title,
         description: getFirstLineDescription(video.description),
     }));
-    console.log(objectsForIframe);
+
     return objectsForIframe;
 }

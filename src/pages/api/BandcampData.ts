@@ -20,11 +20,11 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
         await page.waitForNavigation();
 
         const shareButton = await page.$(".share-embed");
-        console.log(i, await page.evaluate((element) => element?.value, shareButton));
+
         await shareButton?.click();
 
         const buttonEmbed = await page.$(".embed-other-services.panel-section > a");
-        console.log(i, await page.evaluate((element) => element?.value, buttonEmbed));
+
         await buttonEmbed?.click();
 
         const smallSizeElement = await page.$(".sizechoice.small > .sizepreview");
