@@ -21,7 +21,13 @@ export function SearchBar({
 
     return (
         <div className={classes.containerInput}>
-            <input value={valueInput} onChange={handleInputChange} className={classes.input} ref={input} />
+            <input
+                value={valueInput}
+                onChange={handleInputChange}
+                className={classes.input}
+                ref={input}
+                placeholder={"Search sounds"}
+            />
             <NextImage
                 imgURL={`/assets/searchBar/${valueInput ? "x" : "loupe"}.png`}
                 additionalClass={classes.icon}
