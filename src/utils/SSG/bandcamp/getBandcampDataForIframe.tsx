@@ -23,7 +23,7 @@ export async function getBandcampDataDataForIframe() {
         const tracksLength = tracks.length;
 
         const titlesAllTracks: Array<string> = [];
-        for (let i = 0; i <= tracksLength - 1; i++) {
+        for (let i = 0; i <= 1; i++) {
             const tracks = await page.$$("td > .title > a > .track-title");
             tracks.forEach(async (track) => {
                 const trackTitle = await page.evaluate((element) => {
