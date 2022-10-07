@@ -6,15 +6,16 @@ import { IframeBandcampData } from "../../../@types/iframes/IframeBandcampDataIn
 
 export function ListIframes({ listIframesData }: { listIframesData: Array<IframeBandcampData> }) {
     return (
-        <div className={classes.listIframes}>
+        <div>
             <AnimatePresence>
-                <motion.div layout>
-                    {listIframesData.map(({ srcIframe, hrefAnchor, generalTitle }) => (
+                <motion.div layout className={classes.listIframes}>
+                    {listIframesData.map(({ srcIframe, hrefAnchor, generalTitle }, index) => (
                         <OneBandcampIframe
                             key={generalTitle}
                             srcIframe={srcIframe}
                             hrefAnchor={hrefAnchor}
                             generalTitle={generalTitle}
+                            loading={index < 3 ? "eager" : "lazy"}
                         />
                     ))}
                 </motion.div>

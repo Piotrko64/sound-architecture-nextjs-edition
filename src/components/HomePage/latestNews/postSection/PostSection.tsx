@@ -16,6 +16,7 @@ export function PostSection({ dataPost }: PostHygraph) {
                     <Swiper
                         className={cx("mySwiper", classes.overflow)}
                         autoplay={{ delay: 3000 }}
+                        grabCursor
                         modules={[Autoplay]}
                     >
                         <SwiperSlide>
