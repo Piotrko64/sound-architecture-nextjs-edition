@@ -1,8 +1,9 @@
 import { YTDataToIframe } from "../../../../@types/iframes/IframeYTDataType";
-import { PropsHomepage } from "../../../../@types/iframes/PropsHomepage";
 import classes from "./ytSection.module.css";
 
-export function YtSection({ newYtIframeData }: { newYtIframeData: YTDataToIframe }) {
+type Props = { newYtIframeData: YTDataToIframe };
+
+export function YtSection({ newYtIframeData }: Props) {
     const { title, videoId } = newYtIframeData;
     return (
         <div>

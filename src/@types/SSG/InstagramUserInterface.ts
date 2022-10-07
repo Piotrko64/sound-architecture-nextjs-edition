@@ -32,7 +32,6 @@ interface EdgeMediaToTaggedUser {
 
 interface SharingFrictionInfo {
     should_have_sharing_friction: boolean;
-    bloks_app_url?: any;
 }
 
 interface Owner {
@@ -42,7 +41,7 @@ interface Owner {
 
 interface DashInfo {
     is_dash_eligible: boolean;
-    video_dash_manifest?: any;
+
     number_of_qualities: number;
 }
 

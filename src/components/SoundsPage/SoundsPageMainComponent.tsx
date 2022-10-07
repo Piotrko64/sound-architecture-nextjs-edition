@@ -6,8 +6,10 @@ import classes from "./soundsPageMainComponent.module.css";
 import cx from "classnames";
 import { IframeBandcampDataArray } from "../../@types/iframes/IframeBandcampDataInterface";
 
-export function SoundsPageMainComponent({ iframesListData }: { iframesListData: IframeBandcampDataArray }) {
-    const { soundsTitleSearch } = useSearchingStore((state) => state);
+type Props = { iframesListData: IframeBandcampDataArray };
+
+export function SoundsPageMainComponent({ iframesListData }: Props) {
+    const { soundsTitleSearch } = useSearchingStore();
     const filterList = filterByMusicTitle(iframesListData, soundsTitleSearch);
 
     return (

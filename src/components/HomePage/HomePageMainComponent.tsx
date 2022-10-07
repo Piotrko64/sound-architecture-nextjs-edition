@@ -1,10 +1,8 @@
 import { AboveMainFooter } from "./aboveMainFooter/AboveMainFooterComponent";
 import { TheHeader } from "./header/TheHeader";
 import { LatestNews } from "./latestNews/LatestNews";
-import { PostHygraph } from "../../@types/graphql/PostHygraph";
 import { NextImage } from "../../ui/nextImage/NextImage";
 import classes from "./homePage.module.css";
-import { YoutubeVideoInterface } from "../../@types/SSG/YoutubeVideoInterface";
 import { PropsHomepage } from "../../@types/iframes/PropsHomepage";
 
 export function HomePageMainComponent({ newYtIframeData, newBandcampIframe }: PropsHomepage) {

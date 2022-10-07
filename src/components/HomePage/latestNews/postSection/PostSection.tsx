@@ -1,5 +1,3 @@
-import { RichText } from "@graphcms/rich-text-react-renderer";
-import { PostHygraph } from "../../../../@types/graphql/PostHygraph";
 import { NextImage } from "../../../../ui/nextImage/NextImage";
 import classes from "./postSection.module.css";
 import { BandcampSection } from "../bandcampSection/BandcampSection";
@@ -7,10 +5,11 @@ import { Swiper, SwiperSlide } from "../../../../../node_modules/swiper/react";
 import cx from "classnames";
 import "swiper/css";
 import { Autoplay } from "swiper";
-import { InfoBandcampIframe } from "../../../../@types/SSG/ArrayIframesBandcamp";
 import { OneBandcampIframData } from "../../../../@types/iframes/PropsHomepage";
 
-export function PostSection({ newBandcampIframe }: { newBandcampIframe: OneBandcampIframData }) {
+type Props = { newBandcampIframe: OneBandcampIframData };
+
+export function PostSection({ newBandcampIframe }: Props) {
     return (
         <section className={classes.row}>
             <div className={classes.section}>

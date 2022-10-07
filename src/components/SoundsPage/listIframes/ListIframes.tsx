@@ -4,7 +4,9 @@ import classes from "./listIframes.module.css";
 import { EmptyResult } from "../../../ui/emptyResult/EmptyResult";
 import { IframeBandcampData } from "../../../@types/iframes/IframeBandcampDataInterface";
 
-export function ListIframes({ listIframesData }: { listIframesData: Array<IframeBandcampData> }) {
+type Props = { listIframesData: Array<IframeBandcampData> };
+
+export function ListIframes({ listIframesData }: Props) {
     return (
         <div>
             <AnimatePresence>

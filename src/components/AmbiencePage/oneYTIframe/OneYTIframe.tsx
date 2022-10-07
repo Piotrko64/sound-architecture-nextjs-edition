@@ -2,7 +2,9 @@ import { YTDataToIframe } from "../../../@types/iframes/IframeYTDataType";
 import classes from "./oneYTIframe.module.css";
 import { motion } from "framer-motion";
 
-export function OneYTIframe({ iframeData }: { iframeData: YTDataToIframe }) {
+type Props = { iframeData: YTDataToIframe };
+
+export function OneYTIframe({ iframeData }: Props) {
     const { title, videoId, description } = iframeData;
 
     return (

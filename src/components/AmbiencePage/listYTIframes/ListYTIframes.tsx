@@ -4,7 +4,9 @@ import { EmptyResult } from "../../../ui/emptyResult/EmptyResult";
 import { OneYTIframe } from "../oneYTIframe/OneYTIframe";
 import classes from "./listYTIframes.module.css";
 
-export function ListYTIframes({ listIframes }: { listIframes: ArrayYTDataIframe }) {
+type Props = { listIframes: ArrayYTDataIframe };
+
+export function ListYTIframes({ listIframes }: Props) {
     return (
         <>
             <div>
