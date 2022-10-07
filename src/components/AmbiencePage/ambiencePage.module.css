@@ -4,3 +4,8 @@
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 570px) {
+    .mainContainer {
+        padding-top: 45px;
+    }
+}

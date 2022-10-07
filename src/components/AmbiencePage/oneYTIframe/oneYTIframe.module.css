@@ -21,3 +21,11 @@
         font-size: 1.2em;
     }
 }
+@media (max-width: 570px) {
+    .h2 {
+        text-align: justify;
+    }
+    .p {
+        text-align: justify;
+    }
+}

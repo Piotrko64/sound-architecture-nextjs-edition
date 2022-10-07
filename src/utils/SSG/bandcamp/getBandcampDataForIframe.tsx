@@ -16,6 +16,7 @@ export async function getBandcampDataDataForIframe() {
 
     for (let i = 0; i <= allAlbumsUser.length - 1; i++) {
         const allAlbums = await page.$$("#music-grid > li > a");
+
         await allAlbums[i].click();
         await page.waitForNavigation();
 
@@ -23,6 +24,7 @@ export async function getBandcampDataDataForIframe() {
         const tracksLength = tracks.length;
 
         const titlesAllTracks: Array<string> = [];
+
         for (let i = 0; i <= tracksLength - 1; i++) {
             const trackTitle = await page.evaluate((element) => {
                 return element?.innerText;

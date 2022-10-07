@@ -4,3 +4,8 @@
     margin-right: auto;
     padding-top: 85px;
 }
+@media (max-width: 570px) {
+    .container {
+        padding-top: 45px;
+    }
+}

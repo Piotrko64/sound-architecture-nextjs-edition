@@ -57,6 +57,7 @@
         max-width: 500px;
         min-height: 120px;
         align-items: flex-end;
+        padding-top: 15px;
     }
     .h2 {
         font-size: 1.2em;
@@ -68,6 +69,7 @@
 }
 @media (max-width: 440px) {
     .container {
+        padding-top: 5px;
         max-width: 400px;
     }
     .h2 {
