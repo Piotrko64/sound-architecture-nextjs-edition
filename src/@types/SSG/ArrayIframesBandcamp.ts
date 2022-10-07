@@ -1,4 +1,4 @@
 export type ArrayIframesBandcamp = Array<{
     iframeLink: string;
-    mainTitle: string;
+    mainTitles: Array<string>;
 }>;

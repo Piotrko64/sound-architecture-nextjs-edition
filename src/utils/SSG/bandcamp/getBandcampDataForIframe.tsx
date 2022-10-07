@@ -14,47 +14,45 @@ export async function getBandcampDataDataForIframe() {
 
     const allAlbumsUser = await page.$$("#music-grid > li > a");
 
-    for (let i = 0; i <= 0; i++) {
+    for (let i = 0; i <= 1; i++) {
         const allAlbums = await page.$$("#music-grid > li > a");
         await allAlbums[i].click();
         await page.waitForNavigation();
 
-        const actualUrl = await page.url();
         const tracks = await page.$$("td > .title > a");
         const tracksLength = tracks.length;
 
+        const titlesAllTracks: Array<string> = [];
         for (let i = 0; i <= tracksLength - 1; i++) {
-            const tracks = await page.$$("td > .title > a");
-            await tracks[i].click();
-            await page.waitForNavigation();
-
-            const trackTitleElement = await page.$(".trackTitle");
-            const trackTitle = await page.evaluate((element) => {
-                return element?.innerText;
-            }, trackTitleElement);
-
-            const shareButton = await page.$(".share-embed");
-            await shareButton?.click();
-
-            const buttonEmbed = await page.$(".embed-other-services.panel-section > a");
-            await buttonEmbed?.click();
-
-            const smallSizeElement = await page.$(".sizechoice.small > .sizepreview");
-            await smallSizeElement?.click();
-
-            const inputElement = await page.$("input.embed_text");
-            const dataIframe = await page.evaluate((element) => {
-                return element?.value;
-            }, inputElement);
-
-            iframes.push({ iframeLink: dataIframe, mainTitle: trackTitle });
-            await page.goto(actualUrl);
+            const tracks = await page.$$("td > .title > a > .track-title");
+            tracks.forEach(async (track) => {
+                const trackTitle = await page.evaluate((element) => {
+                    return element?.innerText;
+                }, track);
+                titlesAllTracks.push(trackTitle);
+            });
         }
+
+        const shareButton = await page.$(".share-embed");
+        await shareButton?.click();
+
+        const buttonEmbed = await page.$(".embed-other-services.panel-section  > a");
+        await buttonEmbed?.click();
+
+        const bigSizeElement = await page.$(".sizechoice.large > .sizepreview");
+        await bigSizeElement?.click();
+
+        const inputElement = await page.$("input.embed_text");
+
+        const dataIframe = await page.evaluate((element) => {
+            return element?.value;
+        }, inputElement);
+
+        console.log(dataIframe);
+        iframes.push({ iframeLink: dataIframe, mainTitles: titlesAllTracks });
 
         await page.goto(urlBandcamp);
     }
-
-    console.log(iframes.length);
 
     await browser.close();
 
