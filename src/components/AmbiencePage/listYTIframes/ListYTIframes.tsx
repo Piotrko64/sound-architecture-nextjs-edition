@@ -12,8 +12,12 @@ export function ListYTIframes({ listIframes }: Props) {
             <div>
                 <AnimatePresence>
                     <motion.div layout className={classes.listContainer}>
-                        {listIframes.map((iframe) => (
-                            <OneYTIframe key={iframe.title} iframeData={iframe} />
+                        {listIframes.map((iframe, index) => (
+                            <OneYTIframe
+                                key={iframe.title}
+                                iframeData={iframe}
+                                loading={index < 3 ? "eager" : "lazy"}
+                            />
                         ))}
                     </motion.div>
                 </AnimatePresence>
