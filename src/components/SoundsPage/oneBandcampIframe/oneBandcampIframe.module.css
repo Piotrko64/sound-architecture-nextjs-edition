@@ -5,13 +5,12 @@
     justify-content: center;
 }
 .subContainer {
-    height: 42px;
     position: relative;
     background-color: var(--helpColor);
 }
 .iframe {
     height: 420px;
-
+    width: 100%;
     border: none;
     margin-right: auto;
     margin-left: auto;

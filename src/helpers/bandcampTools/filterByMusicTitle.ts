@@ -11,8 +11,8 @@ export function filterByMusicTitle(arrayMusic: IframeBandcampDataArray, titleFil
     return arrayMusic.filter(
         (sound) =>
             sound.generalTitle.toUpperCase().includes(titleFilter.trim().toUpperCase()) ||
-            sound.mainTitles.forEach((titleSound) => {
-                return titleSound.toUpperCase().includes(titleFilter.trim().toUpperCase());
-            })
+            sound.mainTitles.find((titleSounds) =>
+                titleSounds.toUpperCase().includes(titleFilter.toUpperCase())
+            )
     );
 }
