@@ -8,7 +8,7 @@ import cx from "classnames";
 import "swiper/css";
 import { Autoplay } from "swiper";
 
-export function PostSection({ dataPost }: PostHygraph) {
+export function PostSection() {
     return (
         <section className={classes.row}>
             <div className={classes.section}>
@@ -36,7 +36,9 @@ export function PostSection({ dataPost }: PostHygraph) {
                     </Swiper>
                 </div>
                 <div className={classes.text}>
-                    <RichText content={dataPost.textPost.raw} />
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus accusant ium deserunt
+                    nulla dolores delectus recusandae facere, porro, ducimus totam re prehenderit cumque non
+                    similique quia, dicta a voluptatum atque ipsam quasi!
                 </div>
             </div>
             <BandcampSection />

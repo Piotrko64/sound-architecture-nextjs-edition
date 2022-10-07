@@ -9,7 +9,7 @@ import cx from "classnames";
 
 export function AmbiencePageMainComponent({ iframesData }: { iframesData: ArrayYTDataIframe }) {
     const { ambienceTitleSearch } = useSearchingStore((state) => state);
-    const filterList = filterByTitleAndDescription(iframesData, ambienceTitleSearch).reverse();
+    const filterList = filterByTitleAndDescription(iframesData, ambienceTitleSearch);
 
     return (
         <>

@@ -1,6 +1,7 @@
 import { YoutubeVideoInterface } from "../../../@types/SSG/YoutubeVideoInterface";
 import { getFirstLineDescription } from "./getFirstLineDescription";
-import { sliceOnlyTitle } from "./sliceOnlyTitle";
+
+import { ArrayYTDataIframe } from "../../../@types/iframes/IframeYTDataType";
 
 export async function getYoutubeVideos() {
     const fetchData: Array<YoutubeVideoInterface> = await fetch(
@@ -10,7 +11,7 @@ export async function getYoutubeVideos() {
         .then((data) => data.items.map((video: { snippet: YoutubeVideoInterface }) => video.snippet))
         .catch((err) => err);
 
-    const objectsForIframe = fetchData.map((video) => ({
+    const objectsForIframe: ArrayYTDataIframe = fetchData.map((video) => ({
         videoId: video.resourceId.videoId,
         title: video.title,
         description: getFirstLineDescription(video.description),
