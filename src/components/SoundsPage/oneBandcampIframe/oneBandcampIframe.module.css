@@ -10,8 +10,8 @@
     background-color: var(--helpColor);
 }
 .iframe {
-    height: 42px;
-    min-width: 700px;
+    height: 420px;
+
     border: none;
     margin-right: auto;
     margin-left: auto;
