@@ -3,7 +3,7 @@ import { NextImage } from "../../../../ui/nextImage/NextImage";
 import { useState, useEffect } from "react";
 
 export function ImageBackground() {
-    const [opacity, setOpacity] = useState(0);
+    const [opacity, setOpacity] = useState(1);
 
     function calculateOpacity() {
         const screenHeight = screen.height;
