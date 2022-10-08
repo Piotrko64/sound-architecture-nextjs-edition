@@ -10,9 +10,19 @@ type Props = {
     coverMode?: boolean;
     blurMode?: boolean;
     blurURL?: string;
+    opacity?: number;
 };
 
-export function NextImage({ imgURL, additionalClass, click, title, blurMode, coverMode, blurURL }: Props) {
+export function NextImage({
+    imgURL,
+    additionalClass,
+    click,
+    title,
+    blurMode,
+    coverMode,
+    blurURL,
+    opacity,
+}: Props) {
     return (
         <div onClick={click} className={classes.flexOne}>
             <div className={cx(additionalClass, classes.relative)}>
@@ -26,6 +36,7 @@ export function NextImage({ imgURL, additionalClass, click, title, blurMode, cov
                     placeholder={blurMode ? "blur" : "empty"}
                     blurDataURL={blurMode ? blurURL : "empty"}
                     title={title}
+                    style={{ opacity }}
                 />
             </div>
         </div>
