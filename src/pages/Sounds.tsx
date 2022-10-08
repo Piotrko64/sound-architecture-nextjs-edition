@@ -23,6 +23,5 @@ export async function getStaticProps() {
 
     return {
         props: { iframeObjects },
-        revalidate: 86_400,
     };
 }
