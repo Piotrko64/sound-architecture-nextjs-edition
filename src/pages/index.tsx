@@ -12,12 +12,13 @@ const Home: NextPage<PropsHomepage> = ({ newYtIframeData, newBandcampIframe }) =
 export default Home;
 export async function getStaticProps() {
     const newYtIframeData = await (await getYoutubeVideos()).at(-1);
-    const newBandcampIframe = await iframesBandcampDataParser(await getBandcampDataDataForIframe())[0];
+    const newBandcampIframe = iframesBandcampDataParser(await getBandcampDataDataForIframe())[0];
 
     return {
         props: {
             newYtIframeData,
             newBandcampIframe,
         },
+        revalidate: 86_400,
     };
 }

@@ -24,5 +24,6 @@ export async function getStaticProps() {
         props: {
             dataYTVideos,
         },
+        revalidate: 86_400,
     };
 }

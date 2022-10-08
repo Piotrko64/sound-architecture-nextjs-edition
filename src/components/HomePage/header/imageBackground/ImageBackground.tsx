@@ -9,7 +9,7 @@ export function ImageBackground() {
         const screenHeight = screen.height;
         const topScroll = window.scrollY;
 
-        setOpacity((screenHeight - topScroll) / screenHeight);
+        setOpacity((screenHeight - topScroll * 1.5) / screenHeight);
     }
 
     useEffect(() => {
