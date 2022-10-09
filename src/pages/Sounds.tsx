@@ -23,7 +23,7 @@ export async function getStaticProps() {
     const iframeObjects = iframesBandcampDataParser(iframeData);
 
     return {
-        props: { iframeObjects } || [],
+        props: { iframeObjects },
         revalidate: revalidateTime,
     };
 }

@@ -6,5 +6,5 @@ export async function getBandcampDataDataForIframe() {
         .then((data) => data.json())
         .catch((err) => console.log(err));
 
-    return iframes || exampleBandcampData;
+    return iframes;
 }
