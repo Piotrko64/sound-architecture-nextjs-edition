@@ -8,8 +8,8 @@ export function iframesBandcampDataParser(iframesString: ArrayIframesBandcamp) {
         const iframeElement = elementHTML.querySelector("iframe");
         const anchorSelector = elementHTML?.querySelector("a");
         return {
-            srcIframe: iframeElement?.getAttribute("src"),
-            hrefAnchor: anchorSelector?.getAttribute("href"),
+            srcIframe: iframeElement?.getAttribute("src")!,
+            hrefAnchor: anchorSelector?.getAttribute("href")!,
             generalTitle: sliceOnlyTitle(anchorSelector?.innerText!),
             mainTitles: iframe.mainTitles,
         };

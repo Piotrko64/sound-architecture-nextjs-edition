@@ -5,13 +5,13 @@ import { SoundsPageMainComponent } from "../components/SoundsPage/SoundsPageMain
 import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
 import { getBandcampDataDataForIframe } from "../utils/SSG/bandcamp/getBandcampDataForIframe";
 
-const Sounds: NextPage<IframeBandcampDataInterface> = ({ iframeObjects }) => {
+const Sounds: NextPage<any> = ({ iframeObjects }) => {
     return (
         <div>
             <Head>
                 <title>Sound Effects</title>
             </Head>
-            <SoundsPageMainComponent iframesListData={iframeObjects} />
+            <SoundsPageMainComponent iframesListData={iframesBandcampDataParser(iframeObjects)} />
         </div>
     );
 };
@@ -19,10 +19,9 @@ const Sounds: NextPage<IframeBandcampDataInterface> = ({ iframeObjects }) => {
 export default Sounds;
 export async function getStaticProps() {
     const iframeData = await getBandcampDataDataForIframe();
-    const iframeObjects = iframesBandcampDataParser(iframeData);
 
     return {
-        props: { iframeObjects },
+        props: { iframeObjects: iframeData },
         revalidate: 86_400,
     };
 }
