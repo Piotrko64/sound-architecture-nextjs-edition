@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { PropsHomepage } from "../@types/iframes/PropsHomepage";
 import { HomePageMainComponent } from "../components/HomePage/HomePageMainComponent";
+import { revalidateTime } from "../config/revalidate";
 import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
 import { getBandcampDataDataForIframe } from "../utils/SSG/bandcamp/getBandcampDataForIframe";
 import { getYoutubeVideos } from "../utils/SSG/youtube/getYoutubeVideos";
@@ -19,6 +20,6 @@ export async function getStaticProps() {
             newYtIframeData,
             newBandcampIframe,
         },
-        revalidate: 86_400,
+        revalidate: revalidateTime,
     };
 }
