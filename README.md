@@ -64,6 +64,10 @@ Data regarding music is retrieved using the Youtube Data Api and a puppeteer tha
 
 <p align="center"> <img src="https://user-images.githubusercontent.com/77500425/194741923-b4072573-8994-45d6-9e36-219b8bbe50f1.png"/><p>
 
+### Backend for Sound Architecture to scraping Bandcamp information
+
+<a href="https://github.com/Piotrko64/SA2-Backend--Bandcamp-Scraping"> Look at backend for SA to Bandcamp scraping<a/>
+
 <br />
 
 
