@@ -22,9 +22,10 @@ export async function getStaticProps() {
     const dataYTVideos: ArrayYTDataIframe = await getYoutubeVideos();
 
     return {
-        props: {
-            dataYTVideos,
-        },
+        props:
+            {
+                dataYTVideos,
+            } || [],
         revalidate: revalidateTime,
     };
 }
