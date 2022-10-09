@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { ArrayYTDataIframe } from "../@types/iframes/IframeYTDataType";
 import { AmbiencePageMainComponent } from "../components/AmbiencePage/AmbiencePageMainComponent";
+import { revalidateTime } from "../config/revalidate";
 import { getYoutubeVideos } from "../utils/SSG/youtube/getYoutubeVideos";
 
 const Ambience: NextPage<{ dataYTVideos: ArrayYTDataIframe }> = ({ dataYTVideos }) => {
@@ -24,6 +25,6 @@ export async function getStaticProps() {
         props: {
             dataYTVideos,
         },
-        revalidate: 86_400,
+        revalidate: revalidateTime,
     };
 }

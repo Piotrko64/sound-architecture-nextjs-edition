@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { IframeBandcampDataInterface } from "../@types/iframes/IframeBandcampDataInterface";
 import { SoundsPageMainComponent } from "../components/SoundsPage/SoundsPageMainComponent";
+import { revalidateTime } from "../config/revalidate";
 import { iframesBandcampDataParser } from "../helpers/domParser/iframesBandcampDataParser";
 import { getBandcampDataDataForIframe } from "../utils/SSG/bandcamp/getBandcampDataForIframe";
 
@@ -23,6 +24,6 @@ export async function getStaticProps() {
 
     return {
         props: { iframeObjects },
-      
+        revalidate: revalidateTime,
     };
 }
