@@ -12,6 +12,7 @@ export function Footer() {
                 <NextImage
                     imgURL="/assets/footer/yt.webp"
                     additionalClass={cx(classes.socialImg, classes.ytImg)}
+                    href="https://www.instagram.com/soundarchitecture_sa/?next=%2F"
                 />
                 <div className={classes.licenseEmail}>
                     <div className={classes.license} onClick={() => toggleOpenLicense(true)}>
@@ -24,6 +25,7 @@ export function Footer() {
                 <NextImage
                     imgURL="/assets/footer/band.webp"
                     additionalClass={cx(classes.socialImg, classes.bcImg)}
+                    href="https://soundarchitecture.bandcamp.com"
                 />
             </div>
             <div className={classes.rightReserved}>Sound Architecture © 2021 All rights reserved</div>

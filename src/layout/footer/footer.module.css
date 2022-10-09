@@ -38,6 +38,7 @@
     position: relative;
     flex: 1;
     height: 100px;
+    cursor: pointer;
 }
 .ytImg {
     width: 220px;

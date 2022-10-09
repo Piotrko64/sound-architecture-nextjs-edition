@@ -13,7 +13,7 @@ export function HomePageMainComponent({ newYtIframeData, newBandcampIframe }: Pr
         const screenHeight = screen.height;
         const topScroll = window.scrollY;
 
-        setOpacity(topScroll / (screenHeight * 1.5));
+        setOpacity(topScroll / (screenHeight * 1.25));
     }
 
     useEffect(() => {
