@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <p align="center">[Sound Architecture](https://soundarchitecture.vercel.app)</p>
 
-## Getting Started
+<br />
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<p align="center"> <img src="https://user-images.githubusercontent.com/77500425/194741672-bfd493c6-670f-442e-aef7-436ab12f7ab6.jpg" title="SA" alt="logo" height="100"/></p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br />
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<p align="center">This is the second version of the site created for Sound Architecture. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+ </p>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br />
 
-## Learn More
+<div align="center">
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="https://user-images.githubusercontent.com/77500425/161311954-e03613e7-54b2-4d1b-ac2e-559f8c1e9f2d.png" alt="typescript" height="50"  align="center" title="TS"/>
+<img src="https://user-images.githubusercontent.com/77500425/161312615-f3961568-28bb-48fa-9d95-93ecd61337b3.png" alt="react"  height="50" align="center"/>
+<img src="https://user-images.githubusercontent.com/77500425/161314348-bd1a1db1-cf7d-4a7d-a870-25f357a2a03d.png" alt="Next.js" height="50"  align="center" title="NextJS"/>
+<img src="https://user-images.githubusercontent.com/77500425/194741800-19183c7b-7ced-4080-a073-7c3fa3e1cff8.png" alt="Puppeteer" height="50"  align="center" title="Puppeteer"/>
+<img src="https://user-images.githubusercontent.com/77500425/194741822-f4e36847-289a-4aa4-ad23-3e2aaae92a7f.png" alt="YT" height="50"  align="center" title="YT"/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+</div>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br />
+
+# Table of contents
+* [Instalation](#instalation)
+
+* [About project](#about)
+
+
+
+<br />
+
+# Instalation
+- Download files by **git clone _repository-name_**
+- Use **npm i**
+- Use **npm start**
+
+
+
+### You need to complete the **.env** file with the following variables:
+- **YOUTUBEAPIKEY**: "Api key for youtube data Api"
+
+
+<br />
+
+# About 
+
+This is new website for Sound Architecture
+
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/77500425/194741903-8ee4ada3-61cf-4962-831b-a16f9c59a6bd.png"/><p>
+
+Data regarding music is retrieved using the Youtube Data Api and a puppeteer that captures information from the Bandcamp page. Thanks to NextJS, moreover, it was possible to eliminate loading on subpages and display the latest data.
+
+<br />
+
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/77500425/194741923-b4072573-8994-45d6-9e36-219b8bbe50f1.png"/><p>
+
+<br />
+
+
+
+
+
+
