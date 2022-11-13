@@ -8,5 +8,5 @@ export async function getBandcampDataDataForIframe() {
 
         .catch((err) => console.log(err));
 
-    return iframes || exampleBandcampData;
+    return exampleBandcampData;
 }
