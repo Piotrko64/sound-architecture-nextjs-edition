@@ -1,6 +1,28 @@
 export const exampleBandcampData = [
     {
         iframeLink:
+            '<iframe style="border: 0; width: 350px; height: 522px;" src="https://bandcamp.com/EmbeddedPlayer/album=792105986/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://soundarchitecture.bandcamp.com/album/sheep">Sheep by Sound Architecture</a></iframe>',
+        mainTitles: ["ANMLFarm, Sheep, Sheep Bleating, Highland, SA, ZOOM H1n, 9624"],
+    },
+    {
+        iframeLink:
+            '<iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1149922404/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://soundarchitecture.bandcamp.com/album/train-interior">Train Interior by Sound Architecture</a></iframe>',
+        mainTitles: [
+            "TRNInt, Room Noise, Train Noise, Moving Train, Floor Squeak, No Compartments, People Talking, Poland, PKP, SA, ZOOM H4n pro, 9624",
+            "TRNInt, Room Noise, Train Noise, Moving Train, Floor Squeak, No Compartments, People Talking, Poland, PKP, SA, ZOOM H4n pro, 9624 [2]",
+            "TRNInt, Electric Doors, Train Noise, Train Stop, PKP, SA, ZOOM H1n, 9624",
+            "TRNInt, Room Noise, Train Noise, Moving Train, Screeching Wheels, Cabin Car, People Talking, Poland, PKP, SA, ZOOM H1n, 9624",
+            "TRNInt, Room Noise, Train Noise, Screeching Wheels, Moving Train, Floor Squeak, Corridor, Poland, PKP, SA, ZOOM H4n pro, 9624.wav",
+            "TRNInt, Room Noise, Train Noise, Screeching Wheels, Moving Train, Train Stop, Floor Squeak, Corridor, Poland, PKP, SA, ZOOM H4n pro, 9624.wav",
+            "TRNInt, Room Noise, Train Noise, Train Stop, Cabin Car, People Talking, Poland, PKP, SA, ZOOM H1n, 9624.wav",
+            "TRNInt, Room Noise, Train Noise, Train Stop, Cabin Car, People Talking, SA, ZOOM H4n pro, 9624.wav",
+            "TRNInt, Train Noise, Hiss, Moving Train, Floor Squeak, Corridor, Poland, PKP, SA, ZOOM H4n pro, 9624.wav",
+            "TRNInt, Train Noise, Moving Train, Passing Trains, SA, ZOOM H1n, 9624 .wav",
+            "TRNInt, Train Noise, Train Stop, PKP, SA, ZOOM H1n, 9624.wav",
+        ],
+    },
+    {
+        iframeLink:
             '<iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3918256789/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://soundarchitecture.bandcamp.com/album/sailing-ambience">Sailing Ambience by Sound Architecture</a></iframe>',
         mainTitles: [
             "AMBNaut, Sea, Water, Waves, Yacht, Engine, Yacht Swaying, Daytime, SA, ZOOM H1n, 9624",
