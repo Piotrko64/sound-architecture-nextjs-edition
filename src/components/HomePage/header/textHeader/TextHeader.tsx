@@ -5,7 +5,7 @@ import { ScrollParallax } from "react-just-parallax";
 export function TextHeader() {
     return (
         <div className={cx(classes.container, "globalPadding")}>
-            <ScrollParallax strength={0.35} lerpEase={0.6}>
+            <ScrollParallax strength={0.35} lerpEase={0.6} enableOnTouchDevice={false}>
                 <h1 className={classes.h1}>Sound Architecture</h1>
             </ScrollParallax>
         </div>
