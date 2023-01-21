@@ -2,7 +2,7 @@ import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { NextImage } from "../nextImage/NextImage";
 import classes from "./searchBar.module.css";
 
-const TIME_TYPE = 1000;
+const TIME_TYPE = 600;
 
 type Props = {
     valueInput: string;
