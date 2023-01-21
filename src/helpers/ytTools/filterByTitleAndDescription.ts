@@ -10,17 +10,24 @@ export function filterByTitleAndDescription(arrayIframes: ArrayYTDataIframe, tit
     }
 
     return correctArrayIframes.filter(({ title, description }) => {
+        const modifiedTitle = moreTextToIncreaseChancesToSearch(title);
+        const modifiedDecription = moreTextToIncreaseChancesToSearch(description);
+
         return (
-            moreTextToIncreaseChancesToSearch(title).includes(getSimplifiedText(titleFilter)) ||
-            moreTextToIncreaseChancesToSearch(description).includes(getSimplifiedText(titleFilter)) ||
+            modifiedTitle.includes(getSimplifiedText(titleFilter)) ||
+            modifiedDecription.includes(getSimplifiedText(titleFilter)) ||
             titleFilter
                 .split(" ")
                 .find(
-                    (word) => description.includes(word) || description.includes(getSimplifiedText(word))
+                    (word) =>
+                        modifiedDecription.includes(word) ||
+                        modifiedDecription.includes(getSimplifiedText(word))
                 ) ||
             titleFilter
                 .split(" ")
-                .find((word) => title.includes(word) || title.includes(getSimplifiedText(word)))
+                .find(
+                    (word) => modifiedTitle.includes(word) || modifiedTitle.includes(getSimplifiedText(word))
+                )
         );
     });
 }
