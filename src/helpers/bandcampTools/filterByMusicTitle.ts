@@ -12,6 +12,18 @@ export function filterByMusicTitle(arrayMusic: IframeBandcampDataArray, titleFil
             moreTextToIncreaseChancesToSearch(generalTitle).includes(getSimplifiedText(titleFilter)) ||
             mainTitles.find((titleSounds) =>
                 moreTextToIncreaseChancesToSearch(titleSounds).includes(getSimplifiedText(titleFilter))
-            )
+            ) ||
+            titleFilter
+                .split(" ")
+                .find(
+                    (word) => generalTitle.includes(word) || generalTitle.includes(getSimplifiedText(word))
+                ) ||
+            titleFilter
+                .split(" ")
+                .find(
+                    (word) =>
+                        mainTitles.join(" ").includes(word) ||
+                        mainTitles.join(" ").includes(getSimplifiedText(word))
+                )
     );
 }

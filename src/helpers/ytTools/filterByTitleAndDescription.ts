@@ -9,9 +9,18 @@ export function filterByTitleAndDescription(arrayIframes: ArrayYTDataIframe, tit
         return correctArrayIframes;
     }
 
-    return correctArrayIframes.filter(
-        ({ title, description }) =>
+    return correctArrayIframes.filter(({ title, description }) => {
+        return (
             moreTextToIncreaseChancesToSearch(title).includes(getSimplifiedText(titleFilter)) ||
-            moreTextToIncreaseChancesToSearch(description).includes(getSimplifiedText(titleFilter))
-    );
+            moreTextToIncreaseChancesToSearch(description).includes(getSimplifiedText(titleFilter)) ||
+            titleFilter
+                .split(" ")
+                .find(
+                    (word) => description.includes(word) || description.includes(getSimplifiedText(word))
+                ) ||
+            titleFilter
+                .split(" ")
+                .find((word) => title.includes(word) || title.includes(getSimplifiedText(word)))
+        );
+    });
 }
