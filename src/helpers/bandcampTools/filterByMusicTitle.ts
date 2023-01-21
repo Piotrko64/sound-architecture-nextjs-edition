@@ -27,6 +27,7 @@ export function filterByMusicTitle(arrayMusic: IframeBandcampDataArray, titleFil
                     mainTitles.join(" ").includes(getSimplifiedText(word))
             ) ||
             titleFilter
+
                 .split(" ")
                 .find(
                     (word) =>
@@ -34,6 +35,7 @@ export function filterByMusicTitle(arrayMusic: IframeBandcampDataArray, titleFil
                         modifiedMainTitles.includes(getSimplifiedText(word))
                 ) ||
             titleFilter
+
                 .split(" ")
                 .find(
                     (word) =>

@@ -41,6 +41,7 @@ export function SearchBar({ valueInput, changeValue }: Props) {
                 className={classes.input}
                 ref={input}
                 placeholder={"Search sounds"}
+                spellCheck={false}
             />
             <NextImage
                 imgURL={`/assets/searchBar/${valueInput ? "x" : "loupe"}.png`}

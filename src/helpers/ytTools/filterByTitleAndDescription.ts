@@ -17,6 +17,7 @@ export function filterByTitleAndDescription(arrayIframes: ArrayYTDataIframe, tit
             modifiedTitle.includes(getSimplifiedText(titleFilter)) ||
             modifiedDecription.includes(getSimplifiedText(titleFilter)) ||
             titleFilter
+                .trim()
                 .split(" ")
                 .find(
                     (word) =>
@@ -24,6 +25,7 @@ export function filterByTitleAndDescription(arrayIframes: ArrayYTDataIframe, tit
                         modifiedDecription.includes(getSimplifiedText(word))
                 ) ||
             titleFilter
+                .trim()
                 .split(" ")
                 .find(
                     (word) => modifiedTitle.includes(word) || modifiedTitle.includes(getSimplifiedText(word))
