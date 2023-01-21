@@ -1,7 +1,6 @@
-import {
-    IframeBandcampData,
-    IframeBandcampDataArray,
-} from "../../@types/iframes/IframeBandcampDataInterface";
+import { IframeBandcampDataArray } from "../../@types/iframes/IframeBandcampDataInterface";
+import { getSimplifiedText } from "../filtering/getSimplifiedTest";
+import { moreTextToIncreaseChancesToSearch } from "../filtering/moreTextToIncreaseChanceToSearch";
 
 export function filterByMusicTitle(arrayMusic: IframeBandcampDataArray, titleFilter: string) {
     if (titleFilter.trim() === "") {
@@ -9,10 +8,10 @@ export function filterByMusicTitle(arrayMusic: IframeBandcampDataArray, titleFil
     }
 
     return arrayMusic.filter(
-        (sound) =>
-            sound.generalTitle.toUpperCase().includes(titleFilter.trim().toUpperCase()) ||
-            sound.mainTitles.find((titleSounds) =>
-                titleSounds.toUpperCase().includes(titleFilter.toUpperCase())
+        ({ generalTitle, mainTitles }) =>
+            moreTextToIncreaseChancesToSearch(generalTitle).includes(getSimplifiedText(titleFilter)) ||
+            mainTitles.find((titleSounds) =>
+                moreTextToIncreaseChancesToSearch(titleSounds).includes(getSimplifiedText(titleFilter))
             )
     );
 }

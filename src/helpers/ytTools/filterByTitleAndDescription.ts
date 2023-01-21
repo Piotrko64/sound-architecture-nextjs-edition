@@ -1,4 +1,6 @@
 import { ArrayYTDataIframe } from "../../@types/iframes/IframeYTDataType";
+import { getSimplifiedText } from "../filtering/getSimplifiedTest";
+import { moreTextToIncreaseChancesToSearch } from "../filtering/moreTextToIncreaseChanceToSearch";
 
 export function filterByTitleAndDescription(arrayIframes: ArrayYTDataIframe, titleFilter: string) {
     const correctArrayIframes = arrayIframes.filter((iframe) => iframe.description).reverse();
@@ -8,8 +10,8 @@ export function filterByTitleAndDescription(arrayIframes: ArrayYTDataIframe, tit
     }
 
     return correctArrayIframes.filter(
-        (iframe) =>
-            iframe.title.toUpperCase().includes(titleFilter.trim().toUpperCase()) ||
-            iframe.description.toUpperCase().includes(titleFilter.trim().toUpperCase())
+        ({ title, description }) =>
+            moreTextToIncreaseChancesToSearch(title).includes(getSimplifiedText(titleFilter)) ||
+            moreTextToIncreaseChancesToSearch(description).includes(getSimplifiedText(titleFilter))
     );
 }

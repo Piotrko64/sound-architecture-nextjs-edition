@@ -2,11 +2,11 @@ import { websitesUrl } from "../../../config/websitesUrl";
 import { exampleBandcampData } from "../../../data/exampleBandcampData";
 
 export async function getBandcampDataDataForIframe() {
-    const iframes = await fetch(websitesUrl.urlToFetchDataToIframe)
-        .then((data) => data.json())
-        .then((res) => res)
+    // const iframes = await fetch(websitesUrl.urlToFetchDataToIframe)
+    //     .then((data) => data.json())
+    //     .then((res) => res)
 
-        .catch((err) => console.log(err));
+    //     .catch((err) => console.log(err));
 
     return exampleBandcampData;
 }
