@@ -1,6 +1,7 @@
-export function getSimplifiedText(text: string) {
-    return text
+import { deburr } from "lodash";
 
+export function getSimplifiedText(text: string) {
+    return deburr(text)
         .trim()
         .toUpperCase()
 
