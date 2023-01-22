@@ -106,4 +106,4 @@ export const exampleBandcampData = [
             "AMBSea, Harbour, Strong Wind, Gusty Wind, Rain, People Shouting, Halyard Swaying, Rope Sound, Ringing Metal, Waves, Daytime, Croatia, Trogir, SA, ZOOM H1n, 9624.WAV",
         ],
     },
-];
+].map((bandcamp) => ({ ...bandcamp, iframeLink: bandcamp.iframeLink.replace("ffffff", "333333") }));
