@@ -49,23 +49,14 @@
         max-width: 400px;
         margin-bottom: 40px;
     }
-    .image {
-        height: 640px;
-        aspect-ratio: 1.2;
-    }
 }
 @media (max-width: 570px) {
     .text {
         padding: 0px;
     }
-    .image {
-        height: 460px;
-    }
+
     .row {
     }
 }
 @media (max-width: 440px) {
-    .image {
-        height: 310px;
-    }
 }
