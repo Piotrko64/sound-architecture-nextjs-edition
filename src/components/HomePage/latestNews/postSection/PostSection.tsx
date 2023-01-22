@@ -40,7 +40,7 @@ export function PostSection({ newBandcampIframe }: Props) {
                 </div>
                 <BandcampSection newBandcampIframe={newBandcampIframe} />
             </section>
-            <p>
+            <p className={"globalPadding"}>
                 <div className={classes.text}>
                     One person team discovering field recording and sound design still expanding their sound
                     libraries and equipment. Listening is my hobby from buildings acoustics to making music

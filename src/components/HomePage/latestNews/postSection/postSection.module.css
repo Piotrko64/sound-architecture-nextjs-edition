@@ -24,10 +24,6 @@
     .section {
         width: 400px;
     }
-    .row {
-        max-width: 900px;
-        margin: auto;
-    }
 }
 
 @media (max-width: 920px) {

@@ -2,7 +2,6 @@
     width: 500px;
 }
 .containerIframe {
-    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
