@@ -6,7 +6,7 @@
 .section {
     margin-bottom: 100px;
 
-    width: 45%;
+    width: 500px;
 }
 .overflow {
     overflow: hidden;
@@ -18,8 +18,19 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 80px;
+    gap: 40px;
 }
+
+@media (max-width: 1200px) {
+    .section {
+        width: 400px;
+    }
+    .row {
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
 @media (max-width: 920px) {
     .row {
         flex-direction: column;
@@ -30,7 +41,8 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        max-width: 100vh;
+        max-width: 400px;
+
         margin-bottom: 0px;
     }
     .image {

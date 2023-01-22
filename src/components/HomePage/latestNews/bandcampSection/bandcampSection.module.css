@@ -1,18 +1,25 @@
 .iframe {
-    margin: 0 auto;
-    width: 100%;
+    width: 500px;
 }
 .containerIframe {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
+
+@media (max-width: 1200px) {
+    .iframe {
+        width: 400px;
+    }
+}
+
 @media (max-width: 920px) {
     .containerIframe {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        justify-content: center;
     }
 }
 @media (max-width: 440px) {
