@@ -29,6 +29,10 @@
 }
 
 @media (max-width: 920px) {
+    .text {
+        margin-top: 40px;
+        padding: 0 10px;
+    }
     .row {
         flex-direction: column;
         justify-content: center;
@@ -47,6 +51,9 @@
     }
 }
 @media (max-width: 570px) {
+    .text {
+        padding: 0 5px;
+    }
     .image {
         height: 460px;
     }
