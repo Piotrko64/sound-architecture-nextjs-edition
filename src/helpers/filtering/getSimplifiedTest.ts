@@ -1,7 +1,7 @@
 import { deburr } from "lodash";
 
-const SENSITIVE_MIN = 4;
-const SENSITIVE_MAX = 7;
+const SENSITIVE_MIN = 6;
+const SENSITIVE_MAX = 12;
 
 export function getSimplifiedText(text: string) {
     return deburr(text)
