@@ -10,7 +10,7 @@ export function Navigation() {
         <nav className={cx(classes.nav, "globalPadding")}>
             <UlList />
             <Link href="/">
-                <a>
+                <a className={classes.logo}>
                     <NextImage
                         imgURL="/assets/whiteLogo.webp"
                         additionalClass={cx(classes.img, classes.flexOne)}

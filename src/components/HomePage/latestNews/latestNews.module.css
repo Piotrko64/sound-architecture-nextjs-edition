@@ -10,8 +10,7 @@
 }
 .contentNews {
     max-width: 1300px;
-    padding-left: 80px;
-    padding-right: 80px;
+
     margin-left: auto;
     margin-right: auto;
     background-color: var(--backColor);
@@ -19,14 +18,12 @@
 @media (max-width: 1600px) {
     .contentNews {
         max-width: 1200px;
-        padding-left: 40px;
-        padding-right: 40px;
     }
 }
 @media (max-width: 920px) {
     .contentNews {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .h2 {
         font-size: 2.4em;

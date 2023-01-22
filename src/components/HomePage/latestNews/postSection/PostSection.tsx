@@ -11,38 +11,44 @@ type Props = { newBandcampIframe: OneBandcampIframData };
 
 export function PostSection({ newBandcampIframe }: Props) {
     return (
-        <section className={classes.row}>
-            <div className={classes.section}>
-                <div>
-                    <Swiper
-                        className={cx("mySwiper", classes.overflow)}
-                        autoplay={{ delay: 3000 }}
-                        grabCursor
-                        modules={[Autoplay]}
-                    >
-                        <SwiperSlide>
-                            <NextImage
-                                additionalClass={cx(classes.image)}
-                                imgURL="/assets/home/micro.jpg"
-                                coverMode
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <NextImage
-                                additionalClass={cx(classes.image)}
-                                imgURL="/assets/home/micro.jpg"
-                                coverMode
-                            />
-                        </SwiperSlide>
-                    </Swiper>
+        <div>
+            <section className={classes.row}>
+                <div className={classes.section}>
+                    <div>
+                        <Swiper
+                            className={cx("mySwiper", classes.overflow)}
+                            autoplay={{ delay: 3000 }}
+                            grabCursor
+                            modules={[Autoplay]}
+                        >
+                            <SwiperSlide>
+                                <NextImage
+                                    additionalClass={cx(classes.image)}
+                                    imgURL="/assets/home/micro.jpg"
+                                    coverMode
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <NextImage
+                                    additionalClass={cx(classes.image)}
+                                    imgURL="/assets/home/micro.jpg"
+                                    coverMode
+                                />
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
                 </div>
+                <BandcampSection newBandcampIframe={newBandcampIframe} />
+            </section>
+            <p>
                 <div className={classes.text}>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus accusant ium deserunt
-                    nulla dolores delectus recusandae facere, porro, ducimus totam re prehenderit cumque non
-                    similique quia, dicta a voluptatum atque ipsam quasi!
+                    One person team discovering field recording and sound design still expanding their sound
+                    libraries and equipment. Listening is my hobby from buildings acoustics to making music
+                    and recording sounds. I am using my own libraries to make various ambience type videos and
+                    I always find interesting ways to implent them. I am working hard to achieve clean
+                    samples.
                 </div>
-            </div>
-            <BandcampSection newBandcampIframe={newBandcampIframe} />
-        </section>
+            </p>
+        </div>
     );
 }

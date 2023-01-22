@@ -10,7 +10,9 @@
     z-index: 9;
     width: 100vw;
 }
-
+.logo {
+    flex: 1;
+}
 /* .li:hover {
     opacity: 0.8;
 } */
@@ -36,6 +38,9 @@
 }
 
 @media (max-width: 992px) {
+    .logo {
+        flex: none;
+    }
     .nav {
         height: 65px;
     }

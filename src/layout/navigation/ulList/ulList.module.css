@@ -57,6 +57,11 @@
     padding: 15px;
     cursor: pointer;
 }
+
+.li:nth-child(2) {
+    padding-right: 0;
+}
+
 .li:first-child {
     padding-left: 0;
 }

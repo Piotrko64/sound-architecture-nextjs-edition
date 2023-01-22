@@ -7,7 +7,7 @@ import { PropsHomepage } from "../../../@types/iframes/PropsHomepage";
 export function LatestNews({ newYtIframeData, newBandcampIframe }: PropsHomepage) {
     return (
         <>
-            <div className={cx(classes.contentNews, "globalPadding")}>
+            <div className={cx(classes.contentNews)}>
                 <h2 className={classes.h2}> Newest Release </h2>
                 <PostSection newBandcampIframe={newBandcampIframe} />
                 <h2 className={classes.h2}> Youtube </h2>
