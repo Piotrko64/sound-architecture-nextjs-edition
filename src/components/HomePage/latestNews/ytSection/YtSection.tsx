@@ -6,7 +6,7 @@ type Props = { newYtIframeData: YTDataToIframe };
 export function YtSection({ newYtIframeData }: Props) {
     const { title, videoId } = newYtIframeData;
     return (
-        <div>
+        <div className="globalPadding">
             <iframe
                 className={classes.iframe}
                 src={`https://www.youtube.com/embed/${videoId}`}
