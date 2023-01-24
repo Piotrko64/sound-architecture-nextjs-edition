@@ -1,5 +1,5 @@
 .background {
-    background-color: hwb(0 0% 100% / 0.85);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -16,7 +16,6 @@
 .text::-webkit-scrollbar-thumb {
     background-color: white;
     transition: all 3s ease;
-    cursor: pointer;
 }
 .close {
     border: 2px solid white;
@@ -50,6 +49,7 @@
     z-index: 99999;
 }
 .describe {
+    cursor: default;
     width: 100%;
     max-width: 1300px;
     height: 100%;
