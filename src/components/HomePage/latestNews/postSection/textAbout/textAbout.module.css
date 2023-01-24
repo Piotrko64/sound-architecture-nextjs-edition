@@ -17,6 +17,7 @@
     line-height: 1.2;
     font-size: 0.9em;
     transition: all 0.3s ease;
+    user-select: none;
 }
 .textMobile:active {
     opacity: 0;
