@@ -8,14 +8,15 @@
 
     width: 500px;
 }
+
+.relative {
+    position: relative;
+}
+
 .overflow {
     overflow: hidden;
 }
-.text {
-    text-align: justify;
-    max-width: 1085px;
-    margin: 0px auto auto auto;
-}
+
 .row {
     display: flex;
     justify-content: space-evenly;

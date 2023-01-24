@@ -1,0 +1,45 @@
+.text {
+    text-align: justify;
+    max-width: 1085px;
+    margin: 0px auto auto auto;
+}
+
+.textMobile {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    margin: 0;
+    width: 100%;
+    text-align: justify;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    line-height: 1.2;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+.textMobile:active {
+    opacity: 0;
+}
+@media (max-width: 1200px) {
+    .text {
+        max-width: calc(570px + 30%);
+    }
+}
+
+@media (max-width: 920px) {
+    .text {
+        max-width: calc(570px + 30%);
+        margin-top: 40px;
+        padding: 0px;
+        display: none;
+    }
+    .textMobile {
+        display: block;
+    }
+}
+@media (max-width: 570px) {
+    .text {
+        padding: 0px;
+    }
+}
