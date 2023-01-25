@@ -89,6 +89,7 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
+        z-index: 15;
         top: 0;
         background-color: var(--backColor);
         left: 100%;
@@ -98,6 +99,9 @@
         display: flex;
     }
     .li:first-child {
+        padding: 15px;
+    }
+    .li:nth-child(2) {
         padding: 15px;
     }
 

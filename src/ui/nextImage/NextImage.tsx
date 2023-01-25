@@ -1,6 +1,7 @@
 import Image from "next/image";
 import cx from "classnames";
 import classes from "./nextImage.module.css";
+import { MouseEvent } from "react";
 
 type Props = {
     imgURL: string;
@@ -13,6 +14,10 @@ type Props = {
     opacity?: number;
     href?: string;
 };
+
+function preventContextMenu(event: MouseEvent) {
+    event.preventDefault();
+}
 
 export function NextImage({
     imgURL,
@@ -40,6 +45,7 @@ export function NextImage({
                         blurDataURL={blurMode ? blurURL : "empty"}
                         title={title}
                         style={{ opacity }}
+                        onContextMenu={preventContextMenu}
                     />
                 </a>
             </div>
